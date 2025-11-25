@@ -1,29 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  /* Nude + Luxury palette */
-  --bg: #f6f2ee;
+  /* light mode color ways */
+  --bg: #FFF2F2;
 
-  --surface: #ffffff;
+  --nav-foot: #ffffff;
 
-  --text: #1d1b16;
+  --text: #1d1716;
 
-  --muted: #7a736b;
+  --icon: #ffffff;
 
-  --accent: #c8a165;
+  --muted: #817b6edb;
 
-  --accent-600: #9f7c41;
+  --accent: #1d1716;
 
-  --line: #e9e2db;
+  --acent-secondary: #F0E8E8;
 
-  --badge: #efe7de;
+  --acent-hover: #FAB21E;
 
-  --radius: 14px;
+  --border: #E4CBCB;
 
-  --shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+  --radius-primary: 12px;
 
-  --maxw: 640px;
+  --radius-secondary: 0.85rem;
 
-  --font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
-    Helvetica, Arial;
+  --maxw: 1400px;
+
+  --font-primary: "Inter", san-serif;
+
+  --font-secondary: "Public Sans", san-serif;
 }
 
 * {
@@ -33,9 +38,10 @@
 }
 
 body {
-  font-family: var(--font-family);
+  max-width: 100%;
+  font-family: var(--font-primary);
   color: var(--text);
-  background: var(--surface);
+  background: var(--bg);
   line-height: 1.45;
 }
 
@@ -51,16 +57,24 @@ img {
 }
 
 .container {
+  width: 100%;
   max-width: var(--maxw);
   margin: auto;
   padding-inline: 16px;
 }
 
 .hero {
+  width: 100%;
   padding: 16px;
 }
 
 .hero__card {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
   background: linear-gradient(180deg, #fbf8f5, #f6f2ee);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -69,31 +83,37 @@ img {
 }
 
 .hero__title {
-  font-size: 1.35rem;
-  margin: 0 0 6px;
+  font-size: 2.875rem;
+  margin: 0 0 8px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .hero__subtitle {
+  font-size: 18px;
   color: var(--muted);
+  text-align: center;
   margin: 0 0 14px;
 }
 
 .hero__form {
+  width: 95%;
+  margin-top: 40px;
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .hero__row {
   display: grid;
-  gap: 8px;
+  gap: 12px;
 }
 
 .hero__input,
 .hero__select {
   width: 100%;
-  padding: 12px 12px;
+  padding: 14px 12px;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 8px;
   background: #fff;
   font-family: var(--font-family);
 }
@@ -101,7 +121,7 @@ img {
 .hero__select {
   appearance: none;
   &:open {
-    background-color: var(--bg);
+    background-color: var(--acent-secondary);
   }
   option {
     background-color: var(--bg);
@@ -113,17 +133,21 @@ img {
   color: #fff;
   border: none;
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 14px 14px;
   font-weight: 600;
   font-family: var(--font-family);
+  transition: all .2s ease;
+  cursor: pointer;
 }
 
 .hero__btn:hover {
-  background: var(--accent-600);
+  background: var(--acent-hover);
 }
 
 .section {
   padding: 14px 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section__head {

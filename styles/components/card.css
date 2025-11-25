@@ -6,8 +6,7 @@
 }
 
 .card {
-  flex: 0 0 22em;
-  background: var(--surface);
+  flex: 0 0 26em;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -19,15 +18,38 @@
 }
 
 .card__body {
-  padding: 12px;
+  padding: 12px 4px;
+}
+
+.card__body small {
+  display: block;
+  color: var(--muted);
 }
 
 .card__title {
   margin: 0 0 6px;
-  font-size: 1rem;
+  font-size: 1.30rem;
+  display: inline-block;
+}
+
+.badge {
+  float: inline-end;
+  color: var(--muted);
 }
 
 .card__meta {
-  font-size: 0.9rem;
-  color: var(--muted);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--acent-hover);
 }
+
+/* .btn {
+  width: none;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn a {
+  padding: 12px 24px;
+} */

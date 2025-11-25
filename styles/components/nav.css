@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   position: sticky;
   top: 0;
   z-index: 20;
@@ -51,4 +51,122 @@
 .nav--open .nav__list {
   display: block;
   margin: 0 auto;
+} */
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  overflow: visible;
+  padding: 0px 60px;
+  background-color: var(--nav-foot);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.logo {
+  width: 8%;
+  object-fit: cover;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-links ul:not(.sidebar) {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links ul li a {
+  font-size: 17px;
+  color: var(--text);
+  transition: all .1s ease;
+}
+
+.nav-links ul li a.active {
+  color: var(--acent-hover);
+  font-weight: 500;
+  border-bottom: 3px solid var(--acent-hover);
+}
+
+.nav-links ul li a:hover {
+  color: var(--acent-hover);
+  border-bottom: 2px solid var(--acent-hover);
+}
+
+.extra:hover {
+  border-bottom: none;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.nav-btn a{
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: var(--acent-secondary);
+}
+
+.nav-btn i {
+  font-size: 15px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+
+/* side-menu for responsive navbar */
+.sidebar {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 25px;
+  padding-top: 30px;
+  padding-right: 16px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 4;
+  background-color: var(--nav-foot);
+  list-style: none;
+}
+
+.sidebar li {
+  width: 100%;
+  text-align: right;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
 }
