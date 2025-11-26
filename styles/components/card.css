@@ -6,7 +6,7 @@
 }
 
 .card {
-  flex: 0 0 26em;
+  flex: 0 0 23em;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
