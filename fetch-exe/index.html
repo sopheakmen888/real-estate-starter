@@ -18,23 +18,23 @@
     fetch("public/data/properties.json")
     .then((response) => response.json())
     .then((data) => {
-        if (data. length > 0) {
+        if (data.length > 0) {
             console.log(data);
             
-            for (let b = 0;  b< 4; b++)
-        
-    containerPropertiesElement.innerHTML += `
-          <a class="card" href="pages/property/${data[1].title.en}">
-            <img class="card__brand" src="${data[1].images}" alt="${data[i].title.en}">
-            <div class="card__body">
-                <h3 class="card__title">${data[i].title.en}</h3>
-                <div class="card__meta">${data[i].price} ${data[i].currency} / month</div>
-                <span class="badge">Available</span>
-            </div>
-        </a>
-    `;
-    }
-    } 
+            for (let b = 0; b < 4; b++) {
+                containerPropertiesElement.innerHTML += `
+                  <a class="card" href="pages/property/${data[b].title.en}">
+                    <img class="card__brand" src="${data[b].images}" alt="${data[b].title.en}">
+                    <div class="card__body">
+                        <h3 class="card__title">${data[b].title.en}</h3>
+                        <div class="card__meta">${data[b].price} ${data[b].currency} / month</div>
+                        <span class="badge">Available</span>
+                    </div>
+                </a>  
+            `;
+            }
+        }
+    });
 
   </script>
 </body>
