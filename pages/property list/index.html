@@ -17,10 +17,57 @@
                         <div class="fliter"><h1>Fliter<i class="fa-solid fa-filter icon-filter"></i></h1> </div>
                 </div>
                 <div class="category">
-                        <div class="category-type"><h1>Apartment<i class="fa-solid fa-building icon-category"></i></h1></div>
-                        <div class="category-type"><h1>House</h1></div>
-                        <div class="category-type"><h1>Condo</h1></div>
+                        <div class="category-type">
+                                <h1><i class="fa-solid fa-building icon-filter-type"></i></h1>
+                                <h2>Apartment</h2>
+                        </div>
+                        <div class="category-type">
+                                <h1><i class="fa-solid fa-house icon-filter-type"></i></h1>
+                                <h2>Houseㅤㅤ</h2>
+                        </div>
+                        <div class="category-type">
+                                <h1><i class="fa-solid fa-hotel icon-filter-type"></i></h1>
+                                <h2>Condoㅤㅤ</h2>
+                        </div>
                 </div>
+                <div class="property">
+                        <h1>Recommand for you</h1>
+                </div>
+                <div class="card-contanier" id="card-contanier"></div>
     </nav>
+
+
+
+
+
+
+
+    <script>
+                const selectionPropertiesElement = document.getElementById("card-contanier")
+                fetch("*../../public")
+                .then ((res) => res.json())
+                .then((data)=> {
+                    if (data.length > 0 ){
+                        for (let i = 0; i < 12; i++){
+                            selectionPropertiesElement.innerHTML += 
+                                <div class="card-item">
+                                    <div class="img-wrapper">
+                                        <img src="${data[i].images}">
+                                        </div>
+                                    <h3>${data[i].title.en}</h3>
+                                    <h4>${data[i].price},${data[i].currency}</h4>
+                                </div>
+                            
+                        console.log("have data")}
+                    }
+                })
+    </script>
+
+
+
+
+
+
+
 </body>
 </html>

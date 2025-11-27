@@ -7,7 +7,7 @@
     border-radius: 15px;
 }
 .box-search{
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     /* padding: 10px; */
     display: flex;
     justify-content: space-evenly;
@@ -32,7 +32,7 @@
 .fliter h1{
     font-family: var(--Font-famliy-two);
     font-size:14px;
-    background-color: black;
+    background-color: var(--bg-black);
     padding: 15px 15px 15px 15px;
     color: white;
     display: flex;
@@ -46,25 +46,45 @@
     margin-right: 10px;
     font-size: 35px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
 }
 .category {
+
     display: flex;
     justify-content: space-evenly;
-    
+    overflow: hidden;
 }
-.category-type {
-    background-color: var(--bg);
-    margin-top: 20px;
-}
-.category-type h1{
-    font-size: 13px;
-    padding: 20px 20px 20px 20px;
-    background-color: white;
-    display: inline
+.category-type{ 
+    background-color: var(--bg-white);
+    margin: 0;
+    padding: 0px 45px 0px 10px;
+    border-radius: 15px;
+     border: solid 2px #FFBB00;
 
 }
-.category h1 icon-category {
-    margin-right: ;
+.category-type h1{
+    margin: 0;
+    text-align: left;
+}
+.category-type h2{
+    width: 400%;
+    margin-left: 15px;
+    margin: 0;
+    font-size: 13px;
+     color: var(--bg);
+
+}
+.icon-filter-type {
+    width: 100%;
+    font-size: 20px;
+    color: var(--bg);
+    
+}
+.property h1{
+    font-family: var(--Font-famliy-one);
+    font-weight: 400;
+    text-align: left;
+    margin-left: 10px;
 }

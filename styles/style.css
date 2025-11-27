@@ -10,11 +10,12 @@
     --bg:grey;
     --box-bg:blue;
     --bg-white:white;
+    --bg-black:black;
 
 
 
 }   
 body{
-    background-color: var(--bar);
+    /* background-color: var(--bar); */
     margin: 0;
 }
