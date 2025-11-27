@@ -49,3 +49,22 @@
     justify-content: center;
     align-items: center;
 }
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.category-type {
+    background-color: var(--bg);
+    margin-top: 20px;
+}
+.category-type h1{
+    font-size: 13px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    display: inline
+
+}
+.category h1 icon-category {
+    margin-right: ;
+}
