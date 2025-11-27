@@ -13,7 +13,7 @@ for (var i = 0; i < scrollers.length; i++) {
 
   // Set duration based on total width (bigger content, longer scroll)
   const totalWidth = firstGroup.scrollWidth * 2; // A + clone
-  const pxPerSecond = 300;
+  const pxPerSecond = 130;
   const duration = totalWidth / pxPerSecond;
   track.style.setProperty("--marquee-duration", `${duration}s`);
 }

@@ -12,17 +12,63 @@
     <link rel="stylesheet" href="/styles/components/card.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
     <link rel="stylesheet" href="/styles/components/general.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
 
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
 </head>
 
-<body> HI
+<body>
 
     <!-- ===== NAV ===== -->
-    <nav class="nav" aria-label="Primary">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href=""><img src="public/assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li><a onclick="hideSidebar()" href=""><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="">Rent</a></li>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="">Agents</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a class="hideOnMobile active" href="">Home</a></li>
+                    <li><a class="hideOnMobile" href="">Rent</a></li>
+                    <li><a class="hideOnMobile" href="">Buy</a></li>
+                    <li><a class="hideOnMobile" href="">Agents</a></li>
+                    <li><a class="hideOnMobile" href="">About</a></li>
+                    <li><a class="hideOnMobile" href="">Contact</a></li>
+                    <li><a class="hideOnMobile menu-btn" onclick="showSidemenu()" href="javascript:void(0)"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn dropdown">
+                <a href=""><i class="fas fa-moon"></i> Dark</a>
+                
+            </div>
+
+            <script>
+                function showSidemenu(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+
+                function hideSidebar(){
+                    const hideSidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </nav>
+    </header>
+    <!-- <nav class="nav" aria-label="Primary">
         <div class="nav__bar container">
             <a class="nav__brand" href="/">KH Realty</a>
             <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
@@ -34,13 +80,15 @@
             <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
         <div class="hero__card">
-            <h1 class="hero__title">Find your next home</h1>
-            <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
+            <h1 class="hero__title">Find your Home, Appartment &<br> Room
+            in Phnom Penh</h1>
+            <p class="hero__subtitle">Helping you find the perfect property in Phnom Penh,<br>
+             whether it’s for living, investing, or renting.</p>
             <form class="hero__form" action="#" role="search">
                 <select aria-label="Purpose" id="selectPurpose">
                     <option>Rent</option>
@@ -72,33 +120,47 @@
                         <img class="card__media" src="https://picsum.photos/640/400?1"
                             alt="Modern apartment near AEON Mall" />
                         <div class="card__body">
-                            <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
-                            <div class="card__meta">$350 / month • 2BR</div>
-                            <span class="badge">Available</span>
+                            <small>
+                                <i class="fa-solid fa-bed"></i> 2 Bedroom
+                                <i class="fa-solid fa-bath"></i> 2 Bathroom
+                            </small>
+                            <h3 class="card__title">Modern Apartment</h3>
+                            <span class="badge">Boeng Keng Kong 1</span>
+                            <div class="card__meta">USD 99,00</div>
                         </div>
                     </a>
+
+                    
                     <a class="card" href="/property/2">
                         <img class="card__media" src="https://picsum.photos/640/400?2"
                             alt="Cozy student room near ITC" />
                         <div class="card__body">
-                            <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
-                            <div class="card__meta">$80 / month • 1BR</div>
-                            <span class="badge">Available</span>
+                            <small>
+                                <i class="fa-solid fa-bed"></i> 1 Bedroom
+                                <i class="fa-solid fa-bath"></i> 2 Bathroom
+                            </small>
+                            <h3 class="card__title">Cozy Student Room</h3>
+                            <span class="badge">Toul Kork</span>
+                            <div class="card__meta">USD 149,00</div>
                         </div>
                     </a>
                     <a class="card" href="/property/3">
                         <img class="card__media" src="https://picsum.photos/640/400?3" alt="Family house in Sen Sok" />
                         <div class="card__body">
-                            <h3 class="card__title">Family House — Sen Sok</h3>
-                            <div class="card__meta">$78,000 • 3BR</div>
-                            <span class="badge">For Sale</span>
+                            <small>
+                                <i class="fa-solid fa-bed"></i> 3 Bedroom
+                                <i class="fa-solid fa-bath"></i> 3 Bathroom
+                            </small>
+                            <h3 class="card__title">Family House</h3>
+                            <span class="badge">Sen Sok</span>
+                            <div class="card__meta">USD 199,00</div>
                         </div>
                     </a>
                 </div>
-
-
             </div>
         </div>
+
+        <a href="">Explore more</a>
     </section>
 
     <!-- ===== Property Categories (Horizontal) ===== -->
