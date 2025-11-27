@@ -1,0 +1,104 @@
+.card-items {
+  height: 420px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+/* Make image fill the whole card */
+.card-items_media {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card-items_media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text overlay at bottom */
+.card-items__body {
+  width: 100%;
+  height: 45%;  
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.card-items__body small {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.top-cols-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-cols-item h2 {
+  font-size: 1.38rem;
+  color: var(--acent-hover);
+}
+
+.top-cols-item span {
+  color: var(--muted);
+}
+
+.top-cols-item small {
+  font-size: var(--text);
+  color: var(--text);
+}
+
+.top-cols-item i {
+  color: var(--acent-hover);
+}
+
+.title-cols {
+  font-size: 1.75rem;
+  color: var(--text);
+}
+
+.txt-cols{
+  font-size: var(--body);
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-btn a {
+  padding: 10px 144px;
+  margin-top: 6px;
+  color: var(--icon);
+  background-color: var(--acent);
+  border-radius: 0.8rem;
+  transition: all .2s ease;
+}
+
+.card-btn a:hover {
+  background-color: var(--acent-hover);
+}
+
+/* Hover effect */
+.card-items:hover .card-items_media {
+  opacity: 1;
+}
+
+.card-top:hover {
+  transform: translateY(-4px);
+}

@@ -1,12 +1,31 @@
+.container {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container h1 {
+  text-align: left;
+}
+
+#featureCardProperties {
+  display: flex;
+  gap: 20px;
+  
+}
+
 .card {
   display: block; /* since they're <a> now */
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
 }
 
 .card {
-  flex: 0 0 23em;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -23,10 +42,6 @@
 
 .card__body small {
   display: block;
-  color: var(--muted);
-}
-
-.card__body i {
   color: var(--muted);
 }
 

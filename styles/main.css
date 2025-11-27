@@ -12,7 +12,7 @@
 
   --muted: #817b6edb;
 
-  --accent: #1d1716;
+  --acent: #1d1716;
 
   --acent-secondary: #F0E8E8;
 
@@ -35,7 +35,7 @@
   --highlight-text: 0.875rem;
 
   /* layout */
-  --maxw: 1320px;
+  --maxw: 1200px;
 
   /* font-family */
   --font-primary: "Inter", san-serif;
@@ -141,7 +141,7 @@ img {
 }
 
 .hero__btn {
-  background: var(--accent);
+  background: var(--acent);
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -184,8 +184,17 @@ img {
 }
 
 .section__head a {
-  padding: 12px 24px;
-  background-color: pink;
+  font-size: 14px;
+  padding: 12px 28px;
+  color: #fff;
+  background-color: var(--acent-hover);
+  border-radius: 10px;
+  transition: all .2s ease;
+}
+
+.section__head a:hover {
+  text-decoration: none;
+  background-color: var(--acent);
 }
 
 .section__hint {
@@ -215,7 +224,10 @@ img {
 }
 
 .section__agents {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -223,16 +235,19 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 12px;
+  padding: 28px 12px;
+}
+
+.agent-infor {
+  
 }
 
 .agent__avatar {
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   object-fit: cover;
 }

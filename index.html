@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/styles/scroller.css">
     <link rel="stylesheet" href="/styles/components/card.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="/styles/components/card-items.css">
     <link rel="stylesheet" href="/styles/components/general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
@@ -69,19 +70,6 @@
             </script>
         </nav>
     </header>
-    <!-- <nav class="nav" aria-label="Primary">
-        <div class="nav__bar container">
-            <a class="nav__brand" href="/">KH Realty</a>
-            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
-        </div>
-        <ul class="nav__list container" id="navList">
-            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-        </ul>
-    </nav> -->
 
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
@@ -199,6 +187,7 @@
         </div>
     </section>
 
+    <!-- ===== Our uniqueness ===== -->
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Why you should <br>
@@ -262,30 +251,86 @@
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Latest Properties</h2>
-            <a class="section__link" href="#">Show More</a>
         </div>
+
         <div class="card-grid-groups" aria-label="Latest properties">
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?7" alt="Studio near BKK1" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Studio — BKK1</h3>
-                    <div class="card-top__meta">$250 / month</div>
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
                 </div>
             </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?8" alt="Condo in Chroy Changvar" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Condo — Chroy Changvar</h3>
-                    <div class="card-top__meta">$560 / month</div>
+
+            
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
                 </div>
             </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?9" alt="Townhouse in Russey Keo" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Townhouse — Russey Keo</h3>
-                    <div class="card-top__meta">$120,000</div>
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
                 </div>
             </article>
+        </div>
+
+        <div class="section__head">
+            <a class="section__link" href="#">Show More</a>
         </div>
     </section>
 
@@ -293,14 +338,27 @@
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Meet Our Agents</h2>
-            <a class="section__link" href="#">Show More</a>
+            <p>This option comes at a very affordable price, making it accessible without compromising <br>
+             quality. It’s a budget‑friendly choice that delivers great value for the cost.</p>
+            <!-- <a class="section__link" href="#">Show More</a> -->
         </div>
+        
         <div class="section__agents">
             <div class="agent">
                 <img class="agent__avatar" src="https://i.pravatar.cc/100?img=12" alt="Agent Dara" />
                 <div>
                     <div><strong>Dara</strong> • Phnom Penh</div>
-                    <div class="card__meta">Apartments & rooms</div>
+                    <div class="card__meta">Apartments</div>
+                    <p class="agent-infor">
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="agent">
+                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=32" alt="Agent Sreyneang" />
+                <div>
+                    <div><strong>Sreyneang</strong> • Siem Reap</div>
+                    <div class="card__meta">Houses & Villa</div>
                 </div>
             </div>
             <div class="agent">
