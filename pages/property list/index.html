@@ -33,8 +33,30 @@
                 <div class="property">
                         <h1>Recommand for you</h1>
                 </div>
-                <div class="card-contanier" id="card-contanier"></div>
+                <div class="card-contanier" id="cardContanier"></div>
+                       
     </nav>
+                <div class="discount"><img src="../../public/assets/-discount.png" alt=""></div>   
+               <div class="future-card" id="futureCard"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,24 +65,33 @@
 
 
     <script>
-                const selectionPropertiesElement = document.getElementById("card-contanier")
-                fetch("*../../public")
+                const selectionPropertiesElement = document.getElementById("cardContanier")
+                fetch("../../public/data/properties.json")
                 .then ((res) => res.json())
                 .then((data)=> {
                     if (data.length > 0 ){
-                        for (let i = 0; i < 12; i++){
-                            selectionPropertiesElement.innerHTML += 
-                                <div class="card-item">
+                        for (let i = 0; i < 3; i++){
+                            selectionPropertiesElement.innerHTML += `
+                               <div class="card-item">
                                     <div class="img-wrapper">
                                         <img src="${data[i].images}">
-                                        </div>
-                                    <h3>${data[i].title.en}</h3>
+                                    </div>
+                                    <h2>${data[i].title.en}</h2> 
+                                    <h3>${data[i].location.address}</h3>
                                     <h4>${data[i].price},${data[i].currency}</h4>
+                                        <div class="bed-bath">
+                                                <div class="bed"><h1><i class="fa-solid fa-bed icon-bed-bath"></i>${data[i].bedrooms} Bedroom</h1></div>
+                                                <div class="bath"><h1><i class="fa-solid fa-bath icon-bed-bath"></i>${data[i].bathrooms} Bathroom</h1></div>
+                                        </div>
+                                        <div class="view-detail">
+                                                <a href=""><h1>View Details</h1></a>
+                                        </div>
                                 </div>
-                            
+                            `
                         console.log("have data")}
                     }
                 })
+                
     </script>
 
 
