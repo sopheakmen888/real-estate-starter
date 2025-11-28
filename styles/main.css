@@ -63,6 +63,7 @@ img {
 .hero__card {
   background: linear-gradient(180deg, #fbf8f5, #f6f2ee);
   border: 1px solid var(--line);
+  height: 300px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 18px;
@@ -95,6 +96,7 @@ img {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: #fff;
+  margin-top: 70px;
   font-family: var(--font-family);
 }
 
@@ -244,3 +246,207 @@ img {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+@media (min-width: 1024px) {
+  :root {
+    --maxw: 1024px; 
+    --radius: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 1024px) {
+  :root {
+    --maxw: 1100px; 
+    --radius: 16px;
+  }
+
+  body {
+    line-height: 1.6;
+    background: var(--bg);
+  }
+
+  .container {
+    padding-inline: 24px;
+  }
+
+ 
+  .hero {
+    padding: 32px 0;
+  }
+
+  .hero__card {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+
+  .hero__form {
+    gap: 14px;
+  }
+
+  .hero__input,
+  .hero__select {
+    padding: 14px 16px;
+  }
+
+  .hero__btn {
+    padding: 14px 18px;
+    font-size: 1rem;
+  }
+
+  
+  .section {
+    padding: 32px 0;
+  }
+
+  .section__head {
+    margin-bottom: 16px;
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+
+  .card-grid-groups {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .section__agents {
+    gap: 16px;
+  }
+
+  .agent {
+    padding: 16px;
+  }
+
+  .agent__avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  .why {
+    padding: 24px;
+  }
+
+  .why__list {
+    margin: 12px 0 16px 22px;
+  }
+
+ 
+  .quote {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .quote__name {
+    font-size: 0.95rem;
+  }
+
+  
+  .subscribe {
+    padding: 24px;
+  }
+
+  .subscribe__row {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .footer__small {
+    font-size: 1rem;
+  }
+} */
