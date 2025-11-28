@@ -69,3 +69,44 @@
     padding: 59px 2px;
 
 }
+.btn-click{
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    padding: 59px 536px;
+    justify-content: center;
+
+}
+.click{
+    width: 40px;
+    height: 40px;
+
+}
+button{
+    width: 40px;
+    height: 40px;   
+    border-radius: none;
+    transition: all .4s ease;
+    border: none;
+}
+
+button:hover{
+    background-color: var(--acent);
+    color: #fff;
+}
+.feature{
+    max-width: var(--maxw);
+    display: block  ;
+    margin: auto;
+    gap: 39px;
+    padding: 59px 2px;
+}  
+.card-feature{
+    max-width: var(--maxw);
+    display: flex;
+    margin: auto;
+    gap: 39px;
+    padding: 59px 0px;
+}
+
+    
