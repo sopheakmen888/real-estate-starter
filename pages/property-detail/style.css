@@ -100,7 +100,7 @@ body{
     justify-content: center;
     margin-top:10px;
     padding: 15px;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px 5px 5px 0;
 }
 
@@ -110,14 +110,69 @@ body{
     margin-top: 10px;
 }
 
-.text-section h1{
-    font-size: 24px;
+.text-description h1{
+    font-size: 26px;
+    padding-left: 10px ;
 }
 
 .line-under{
-    width: 100%;
-    height: 2px;
+    width: 95%;
+    padding: 0.90px;
     background-color: gray;
+    display: flex;
+    margin-left: 10px;
+}
+
+.text-section p{
+    font-size: 15px;
+    padding-left:10px ;
+}
+
+.details-section{
+    width: 100%;
+    display: block;
     margin-top: 10px;
-    margin-bottom: 10px;
+}
+
+.photos-section {
+    width: 100%;
+    background-color: lightgray;
+    display: block;
+    justify-content: center;
+    margin-top:10px;
+   
+    border-radius: 10px;
+    padding:0;
+    height: 100px;
+}
+
+.text-photos{
+    font-size: 15px;
+    background-color: green;
+    padding-left: 10px ;
+    padding: 0;
+}   
+
+.photos-box{
+    width: 100%;
+    background-color: yellow;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.images-photo{
+    width: 25%;
+    background-color: green;
+    border-radius:25px;
+    padding: 0;
+}
+
+.images-photo img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+    border-radius:30px ;
 }
