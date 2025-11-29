@@ -14,6 +14,7 @@
 
 .card__media {
   aspect-ratio: 16/10;
+  border-radius: 12px;
   object-fit: cover;
 }
 

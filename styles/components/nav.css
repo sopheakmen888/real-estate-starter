@@ -55,13 +55,13 @@
 .nav-links ul li a:not(.sidebar a) {
   font-size: 17px;
   color: var(--icon);
-  transition: all .1s ease;
+  transition: all .2s ease;
 }
 
 .nav-links ul li a.active {
   color: var(--acent-hover);
   font-weight: 500;
-  border-bottom: 3px solid var(--acent-hover);
+  border-bottom: 2px solid var(--acent-hover);
 }
 
 .nav-links ul li a:hover {
@@ -101,7 +101,7 @@
 }
 
 .menu-btn {
-  display: block;
+  display: none;
   font-size: 22px;
   margin-right: 14px;
   cursor: pointer;
