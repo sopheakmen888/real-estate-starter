@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agent-listing-page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/components/nav.css">
+    <link rel="stylesheet" href="../../styles/components/card-top.css">
+    <link rel="stylesheet" href="../../styles/components/card.css">
+    <link rel="stylesheet" href="../../styles/components/card-items.css">
+    <link rel="stylesheet" href="../../styles/components/general.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/scroller.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header class="navbar-content"> 
+        <nav class="navbar">
+            <div class="logo">
+                <a href=""><img src="../../public/assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li><a onclick="hideSidebar()" href=""><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="">Rent</a></li>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="">Agents</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a class="hideOnMobile active" href="">Home</a></li>
+                    <li><a class="hideOnMobile" href="">Rent</a></li>
+                    <li><a class="hideOnMobile" href="">Buy</a></li>
+                    <li><a class="hideOnMobile" href="">Agents</a></li>
+                    <li><a class="hideOnMobile" href="">About</a></li>
+                    <li><a class="hideOnMobile" href="">Contact</a></li>
+                    <li><a class="hideOnMobile menu-btn" onclick="showSidemenu()" href="javascript:void(0)"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <a href=""><i class="fas fa-moon"></i> Dark</a>
+                
+            </div>
+
+            <script>
+                function showSidemenu(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+
+                function hideSidebar(){
+                    const hideSidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </nav>
+    </header>
+
+    <section class="agent-page">
+            <h1 class="agent">Find Agent</h1>
+            <p class="about-agent">Trustworthy and experienced real estate brokers we <br> recommend</p>
+    </section>
+
+    <section class="btn-search">
+            <input type="text" placeholder="Enter the location..." class="search-input">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>          
+    </section>
+
+    
+
+    <section class="section container">
+        <div class="section__agents">
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="/public/assets/images/agent.jpg" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+        </div> 
+
+        <div class="section__agents">
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="/public/assets/images/agent.jpg" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+        </div> 
+
+        <div class="section__agents">
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="/public/assets/images/agent.jpg" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+        </div> 
+
+        <div class="section__agents">
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="/public/assets/images/agent.jpg" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
+                </div>
+            </a>
+        </div> 
+    </section>
+
+    <section class="btn-click">
+        <button"><i class="fas fa-chevron-left"></i></button>
+        <button class="click" style="background-color: black; color: white;">01</button>
+        <button class="click">02</button>
+        <button class="click">...</button>
+        <button><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <footer class="footer">
+        <div class="img-footer">
+            <a href=""><img src="/public/assets/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="footer-infor">
+            <h1>Excellence <span>Defined</span>. Lifestyle <span>Redefined</span>.</h1>
+            <p>We are committed to delivering premium real estate solutions that blend modern living with long-term value. With a focus on quality, innovation, and customer satisfaction, we create spaces that inspire and elevate everyday life. Your future begins with a home built on excellence.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p>CONTACT US:</p>
+             <div class="contact-cols">
+                <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
+                <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+             </div>
+        </div>
+
+        <nav aria-label="footer-links">
+                <div class="footer__small">
+                    <a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> • <a href="#">Contact</a>
+                </div>
+        </nav>
+
+        <div class="copyright">
+            <small>© 2025 Apple KH Real Estate. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+
+
+
