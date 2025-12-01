@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/components/general.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
@@ -38,23 +39,52 @@
 
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
-        <div class="hero__card">
-            <h1 class="hero__title">Find your next home</h1>
-            <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
-            <form class="hero__form" action="#" role="search">
-                <select aria-label="Purpose" id="selectPurpose">
-                    <option>Rent</option>
-                    <option>Buy</option>
-                </select>
-                <select aria-label="Type" id="selectType">
-                    <option>Room</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-                <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
-                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
-                <button class="hero__btn" type="submit">Search</button>
-            </form>
+        <div class="contact__page">
+            <h4 class="back__home"> <i class="fa-solid fa-angle-left"></i> Home</h4>
+            <h2 class="home">Home</h2>
+        </div>
+        <img src="contact3.png" alt="" class="contact__contact">
+        <div class="contact__p">
+            <h2 class="contact__head">
+                CONTACT US 
+            </h2>
+            <p class="contact__letter">
+                Please contact us by phone or email.
+            </p>
+            <h3 class="contact__number">
+                254 20 513 1000 <br>254 708 555 555
+            </h3>
+            <a href="" class="contact__mail">
+                applekh@.com
+            </a><br>
+            <a href="" class="contact__address">
+                Tatu House, Off Ruiru Kiambu Road,
+                P.O. Box 2739-00621, Nairobi.
+            </a>
+        </div>
+        <form action="#" method="POST">
+            <h2 style="text-align: center;">Contact Us</h2>
+            
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+            
+            <button type="submit" style="text-align: center;">Send Message</button>
+        </form>
+        <div class="subscribre" style="display: flex; margin: auto; justify-content: space-around;">
+            <img src="sub.png" alt="" class="sub">
+            <div class="submk">
+                <label for="phone" style="font-size: 30px;">Our newsletter</label>
+                <input class="sub__icon" style="width: 300px; margin-right: 10px;" type="tel" id="phone" name="phone" placeholder="Enter your email address"><i class="fa-solid fa-paper-plane" style="font-size: 20px;margin-top: 5px;"></i>
+            </div>
         </div>
     </header>
 

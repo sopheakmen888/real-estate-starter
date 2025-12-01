@@ -1,0 +1,60 @@
+
+.contact__page{
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact__p{
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact__contact{
+    width: 800px;
+    border-top-width: 10px;
+
+}
+
+  form {
+    
+    margin: 20px auto;
+    padding: 40px;
+    background: FFFFFF;
+    border-radius: 10px;
+  }
+
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    background-color:rgba(20, 174, 92, 1);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+  .subscribre{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .submk{
+    margin-top: 40px;
+  }
+
+  .sub{
+
+    width: 300px;
+  }
