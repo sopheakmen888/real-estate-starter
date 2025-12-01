@@ -94,7 +94,7 @@ button {
   .menu__button {
     display: block;
   }
-  button {
+  .nav__button {
     display: none;
   }
   .hero__searchbar .icon {

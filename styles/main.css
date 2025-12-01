@@ -63,10 +63,6 @@ img {
 }
 
 .hero__card {
-  background-image: url('https://coralhomes.com.au/wp-content/uploads/Atlanta-Series.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -79,11 +75,10 @@ img {
   font-weight: bold;
   margin: 0 0 6px;
   color: var(--accent);
-  text-shadow: 5px 3px 5px #000;
 }
 
 .hero__subtitle {
-  color: var(--text-one);
+  color: var(--text-two);
   margin: 0 0 14px;
   font-size: 1.5rem;
 }
@@ -112,8 +107,6 @@ img {
 
 .hero__searchbar input {
   border: none;
-  background: rgb(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
   width: 100%;
   padding: 20px 15px;
   border-radius: 20px;
@@ -121,7 +114,7 @@ img {
 }
 
 input::placeholder {
-  color: #fff;
+  /* color: #fff; */
   font-family: var(--font-family);
 }
 
@@ -173,9 +166,10 @@ input::placeholder {
 }
 
 .section__card__container {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .section__card {
@@ -187,16 +181,22 @@ input::placeholder {
   background-color: var(--bg-one);
   overflow: hidden;
   border: 1px solid #e5e5e5;
+  width: 100%;
+}
+
+.section__avatar {
+  width: 100%;
+  height: 200px;
 }
 
 .section__avatar img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .section__content {
-  width: 300px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
