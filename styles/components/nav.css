@@ -16,6 +16,8 @@
 .nav__brand {
   font-weight: 800;
   letter-spacing: 0.2px;
+  width: 54px;
+  height: 25px;
 }
 
 button {
