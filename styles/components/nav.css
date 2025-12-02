@@ -26,7 +26,7 @@ button {
   color: var(--text);
 }
 
-.nav__toggle {
+.nav__button {
   display: flex;
   align-items: center;
   gap: 5px;
