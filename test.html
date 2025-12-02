@@ -15,8 +15,32 @@
             color: #fff;
         }
     </style>
+
+    <style>
+
+.company-logo {
+width: 200px;   /* set your image width */
+height: 100px;  /* set your image height */
+background-image: url("public/assets/images/company/image 2.png"); /* light mode */
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+transition: background-image 0.3s ease-in-out;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+.company-logo {
+background-image: url("public/assets/images/company/image 1.png"); /* dark mode */
+}
+}
+
+    </style>
+
 </head>
+
 <body class="dark--mode">
+
     <button id="dark--mode--toggle">Dark Mode</button>
 
     <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;">Hello World</h1>
@@ -42,5 +66,13 @@
         };
 
     </script>
+
+</body>
+
+<body>
+    <!-- HTML -->
+
+<div class="company-logo" role="img" aria-label="Company Logo"></div>
+
 </body>
 </html>

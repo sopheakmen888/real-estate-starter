@@ -4,7 +4,7 @@
 
   --bg-two: #000;
 
-  --text-one: #fff;
+  --text: #000;
 
   --muted: #7a736b;
 
@@ -25,6 +25,26 @@
   --font-family: "Roboto Condensed", sans-serif;
 }
 
+.dark__mode {
+
+  --bg-one: #000;
+
+  --bg-two: #fff;
+
+  --text: #fff;
+
+  --muted: #c9c3bb;
+
+  --accent: #ffbb00;
+
+  --accent-600: #dba100;
+
+  --line: #4a4744;
+
+  --badge: #4f4740;
+
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -39,6 +59,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.dark__mode {
+  background-color: #000;
+  color: #fff;
 }
 
 a {
@@ -63,7 +88,7 @@ img {
 }
 
 .hero__card {
-  background: linear-gradient(180deg, #fbf8f5, #f6f2ee);
+  background-color: var(--bg-one);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -77,7 +102,7 @@ img {
 }
 
 .hero__subtitle {
-  color: var(--muted);
+  color: var(--text);
   margin: 0 0 14px;
 }
 
@@ -97,17 +122,17 @@ img {
   padding: 12px 12px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: #fff;
+  background: var(--bg-one);
   font-family: var(--font-family);
 }
 
 .hero__select {
   appearance: none;
   &:open {
-    background-color: var(--bg);
+    background-color: var(--bg-one);
   }
   option {
-    background-color: var(--bg);
+    background-color: var(--bg-one);
   }
 }
 
@@ -187,7 +212,7 @@ img {
   align-items: center;
   background-color: var(--bg-one);
   overflow: hidden;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--line);
   width: 100%;
 }
 
@@ -244,7 +269,7 @@ img {
   background-color: var(--accent);
   padding: 10px 30px;
   width: 100%;
-  color: #fff;
+  color: var(--text);
   border-radius: 20px;
   text-align: center;
 }

@@ -23,6 +23,7 @@ button {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 10px 15px;
+  color: var(--text);
 }
 
 .nav__toggle {
@@ -33,7 +34,7 @@ button {
 }
 
 .nav__sidebar-item {
-  color: #000;
+  color: var(--text);
 }
 
 .nav__list {
