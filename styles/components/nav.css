@@ -22,22 +22,21 @@
   background: transparent;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 8px 10px;
-  font-family: var(--font-family);
+  padding: 10px 15px;
+  font-family: var(--font-family-one);
 }
 
 .nav__list {
-  display: none;
+  display: flex;
+  gap: 50px;
   list-style: none;
   margin: 0;
   padding: 8px 16px;
-  border-top: 1px solid var(--line);
   background: var(--surface);
 }
 
 .nav__item {
   padding: 10px 0;
-  border-bottom: 1px dashed var(--line);
 }
 
 .nav__item:last-child {
@@ -46,6 +45,11 @@
 
 .nav__link {
   display: block;
+  font-family: var(--font-family-one);
+}
+
+.nav__link:hover {
+  color: var(--accent);
 }
 
 .nav--open .nav__list {

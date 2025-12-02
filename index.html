@@ -15,25 +15,46 @@
 
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+    </style>
 </head>
 
-<body> HI
+<body>
 
     <!-- ===== NAV ===== -->
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav">
         <div class="nav__bar container">
-            <a class="nav__brand" href="/">KH Realty</a>
-            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
+            <a href="/" class="nav__brand"><img src="public/assets/images/company/image 2.png" alt=""></a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Rent</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Buy</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Agents</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle"><i class="fa-solid fa-moon"></i> Dark Mode</button>
         </div>
-        <ul class="nav__list container" id="navList">
-            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-        </ul>
+    </nav>
+    <nav class="nav">
+        <div class="nav__bar container">
+            <a href="/" class="nav__brand"><img src="public/assets/images/company/image 2.png" alt=""></a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Rent</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Buy</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Agents</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle"><i class="fa-solid fa-moon"></i> Dark Mode</button>
+        </div>
     </nav>
 
     <!-- ===== HERO: Search & Filter ===== -->
@@ -146,6 +167,7 @@
                     <div class="card-top__meta">$250 / month</div>
                 </div>
             </article>
+            
             <article class="card-top">
                 <img class="card-top__media" src="https://picsum.photos/640/400?8" alt="Condo in Chroy Changvar" />
                 <div class="card-top__body">

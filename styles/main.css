@@ -8,7 +8,7 @@
 
   --muted: #7a736b;
 
-  --accent: #c8a165;
+  --accent: #ffbb00;
 
   --accent-600: #9f7c41;
 
@@ -20,10 +20,11 @@
 
   --shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
 
-  --maxw: 640px;
+  --maxw: 100%;
 
-  --font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
-    Helvetica, Arial;
+  --font-family-one: "Oswald", sans-serif;
+
+  --font-family-two: "Roboto", sans-serif;
 }
 
 * {
@@ -33,8 +34,8 @@
 }
 
 body {
-  font-family: var(--font-family);
   color: var(--text);
+  font-family: var(--font-family-two);
   background: var(--surface);
   line-height: 1.45;
 }
