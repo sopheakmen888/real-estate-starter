@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/components/card.css">
+    <link rel="stylesheet" href="/styles/sticky.css">
+</head>
+<body>
+    <div class="container__properties">
+      
+    </div>
+  <script>
+    const containerPropertiesElement = document.getElementById("container__properties")
+
+    fetch("public/data/properties.json")
+    .then((response) => response.json())
+    .then((data) => {
+        if (data.length > 0) {
+            console.log(data);
+            
+            for (let b = 0; b < 4; b++) {
+                containerPropertiesElement.innerHTML += `
+                  <a class="card" href="pages/property/${data[b].title.en}">
+                    <img class="card__brand" src="${data[b].images}" alt="${data[b].title.en}">
+                    <div class="card__body">
+                        <h3 class="card__title">${data[b].title.en}</h3>
+                        <div class="card__meta">${data[b].price} ${data[b].currency} / month</div>
+                        <span class="badge">Available</span>
+                    </div>
+                </a>  
+            `;
+            }
+        }
+    });
+
+  </script>
+</body>
+</html>

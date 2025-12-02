@@ -1,0 +1,173 @@
+body{
+    background-color: #ffffff;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    margin: 0 ; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-1 {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: #E8E8E8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.box-1-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.box-1-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.box-1-1 span a{
+    font-size: 13px;
+    color: green;
+}
+
+.box-1-2{
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.box-1-2 span{
+    font-size: 16px ;
+}
+
+.picture-section {
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+    padding: 15px;
+    border-radius: 30px;
+    padding:0;
+}
+
+.picture-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.picture-1 img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit:cover;
+}
+
+.picture-2{
+    width: 50%;
+    display: block;
+}
+
+.picture-2-1{
+    width: 100%;
+    height: 50%;
+}
+
+.picture-2-1 img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit:cover;
+}
+
+.picture-2-2 img{
+   border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.discription {
+    width: 100%;
+    background-color: lightgray;
+    display: block;
+    justify-content: center;
+    margin-top:10px;
+    padding: 15px;
+    border-radius: 10px;
+    padding: 10px 5px 5px 0;
+}
+
+.text-section{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.text-description h1{
+    font-size: 26px;
+    padding-left: 10px ;
+}
+
+.line-under{
+    width: 95%;
+    padding: 0.90px;
+    background-color: gray;
+    display: flex;
+    margin-left: 10px;
+}
+
+.text-section p{
+    font-size: 15px;
+    padding-left:10px ;
+}
+
+.details-section{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.photos-section {
+    width: 100%;
+    background-color: lightgray;
+    display: block;
+    justify-content: center;
+    margin-top:10px;
+   
+    border-radius: 10px;
+    padding:0;
+    height: 100px;
+}
+
+.text-photos{
+    font-size: 15px;
+    padding-left: 5px ;
+   
+}   
+
+.photos-box{
+    width: 100%;
+    display: flex;
+   
+}
+
+.images-photo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.images-photo img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}

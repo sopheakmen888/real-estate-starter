@@ -13,19 +13,21 @@
     <link rel="stylesheet" href="/styles/components/card-top.css">
     <link rel="stylesheet" href="/styles/components/general.css">
 
+    <link rel="stylesheet" href="/styles/sticky.css">
+
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
 
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
 </head>
 
-<body> HI
+<body>
 
     <!-- ===== NAV ===== -->
     <nav class="nav" aria-label="Primary">
         <div class="nav__bar container">
-            <a class="nav__brand" href="/">KH Realty</a>
-            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
+            <img src="Image/Frame 296.png" alt="" class="nav__brand">
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
         </div>
         <ul class="nav__list container" id="navList">
             <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
@@ -38,7 +40,22 @@
 
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
-        <div class="hero__card">
+        <div class="hero__container">
+            <h1 class="hero__container--title">The Most Trusted and <br>
+                 Effective <br>
+            Real Estate Partner <br>
+            in Cambodia!</h1>
+            <img class="hero__card--image" src="Image/Frame 1 (2).png" alt="">
+            <div class="hero__container--search-bar">
+                <div class="hero__card--search-relative">
+                    <input class="hero__container--input" type="search">
+                    <a><img class="hero__card--search-icon" src="Image/search-bar.svg" alt=""></a>
+                </div>
+            </div>
+           
+        </div>  
+        
+        <!-- <div class="hero__card">
             <h1 class="hero__title">Find your next home</h1>
             <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
             <form class="hero__form" action="#" role="search">
@@ -55,7 +72,7 @@
                 <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
                 <button class="hero__btn" type="submit">Search</button>
             </form>
-        </div>
+        </div> -->
     </header>
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
@@ -65,6 +82,41 @@
         </div>
 
         <div class="scroller" aria-label="Featured properties">
+            <div class="scroller__track">
+                <!-- Group A -->
+                <div class="scroller__group">
+                    <a class="card" href="/property/1">
+                        <img class="card__media" src="https://picsum.photos/640/400?1"
+                            alt="Modern apartment near AEON Mall" />
+                        <div class="card__body">
+                            <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
+                            <div class="card__meta">$350 / month • 2BR</div>
+                            <span class="badge">Available</span>
+                        </div>
+                    </a>
+                    <a class="card" href="/property/2">
+                        <img class="card__media" src="https://picsum.photos/640/400?2"
+                            alt="Cozy student room near ITC" />
+                        <div class="card__body">
+                            <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
+                            <div class="card__meta">$80 / month • 1BR</div>
+                            <span class="badge">Available</span>
+                        </div>
+                    </a>
+                    <a class="card" href="/property/3">
+                        <img class="card__media" src="https://picsum.photos/640/400?3" alt="Family house in Sen Sok" />
+                        <div class="card__body">
+                            <h3 class="card__title">Family House — Sen Sok</h3>
+                            <div class="card__meta">$78,000 • 3BR</div>
+                            <span class="badge">For Sale</span>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+               <div class="scroller" aria-label="Featured properties">
             <div class="scroller__track">
                 <!-- Group A -->
                 <div class="scroller__group">

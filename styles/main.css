@@ -2,19 +2,19 @@
   /* Nude + Luxury palette */
   --bg: #f6f2ee;
 
-  --surface: #ffffff;
+  --surface: #F4F6F0;
 
   --text: #1d1b16;
 
   --muted: #7a736b;
 
-  --accent: #c8a165;
+  --accent: #14AE5C;
 
   --accent-600: #9f7c41;
 
   --line: #e9e2db;
 
-  --badge: #efe7de;
+  --badge: #FF0000;
 
   --radius: 14px;
 
@@ -24,6 +24,8 @@
 
   --font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
     Helvetica, Arial;
+
+  --backgroud-card:#E8E8E8;
 }
 
 * {
@@ -61,8 +63,8 @@ img {
 }
 
 .hero__card {
-  background: linear-gradient(180deg, #fbf8f5, #f6f2ee);
-  border: 1px solid var(--line);
+  background:var(--backgroud-card);
+  border: 1px solid  var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 18px;

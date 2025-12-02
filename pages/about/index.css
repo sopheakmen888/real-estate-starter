@@ -1,0 +1,16 @@
+
+.about__page{
+    background-color:rgba(232, 232, 232, 1);
+    border-radius: 10px;
+    padding: 10px;
+}
+.home{
+    margin-left: 5px;
+}
+.about__img{
+    width: 650px;
+    margin-top: 10px;
+}
+.about__new{
+    text-align: center;
+}

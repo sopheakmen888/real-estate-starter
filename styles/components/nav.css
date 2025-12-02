@@ -20,10 +20,13 @@
 
 .nav__toggle {
   background: transparent;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: var(--radius);
   padding: 8px 10px;
   font-family: var(--font-family);
+}
+.nav__toggle--image{
+  border-radius: 0;
 }
 
 .nav__list {

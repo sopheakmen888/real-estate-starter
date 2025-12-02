@@ -1,0 +1,40 @@
+.hero__container{
+    position: relative;
+
+}
+.hero__container--title{
+    position: absolute;
+    color:#fff;
+    font-size: 25px;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    text-align: center;
+
+}
+.hero__container--search-bar{
+    display: flex;
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+    right: 50px;
+}
+.hero__card--search-relative{
+    position: relative;
+}
+.hero__container--input{
+    position: relative;
+    background-color: black;
+    border: 5px solid #14AE5C;
+    border-radius:20px;
+    height: 40px;
+    width: 500px;
+    max-width: 600px;
+}
+.hero__card--search-icon{
+    position: absolute;
+    right: 10px;
+    top: 8px;   
+    
+    
+}
