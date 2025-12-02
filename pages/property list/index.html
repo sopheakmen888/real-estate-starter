@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Property list</title>
 </head>
 <body>
     <nav class="property-list">
-            <h1>Propperty List</h1>
+            <h1>Property List</h1>
                 <div class="box-search">
                         <div class="search"><h1>Search<i class="fa-solid fa-magnifying-glass icon-search"></i></h1></div>
-                        <div class="fliter"><h1>Fliter<i class="fa-solid fa-filter icon-filter"></i></h1> </div>
+                      <div class="filter-wrapper">
+                                        <div class="fliter" id="filterBtn">
+                                                <h1>Filter <i class="fa-solid fa-filter icon-filter"></i></h1>
+                                        </div>
+                                        <div class="filter-menu" id="filterMenu">
+                                                <div class="filter-menu-box">
+                                                        <i class="fa-regular fa-circle-xmark icon-filter-menu"></i>
+                                                        <h1>Filter</h1>
+                                                        <h2>Reset Filter</h2>
+                                                </div>
+                                                <p>Price</p>
+                                                <p>Brand</p>
+                                                <p>Color</p>
+                                                <p>Category</p>
+                                        </div>
+                                        </div>
+
                 </div>
                 <div class="category">
                         <div class="category-type">
@@ -36,8 +51,20 @@
                 <div class="card-contanier" id="cardContanier"></div>
                        
     </nav>
-                <div class="discount"><img src="../../public/assets/-discount.png" alt=""></div>   
-               <div class="future-card" id="futureCard"></div>
+                
+                <div class="discount"><img src="../../public/assets/-discount.png" alt=""></div>               
+                <div class="future-card" id="futureCard"></div>
+
+                <div class="pagination"> 
+                        < Back <a href="" class="number1">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <a href="">6</a>
+                        <a href="">7</a> Next >      
+                </div>
+                
     
 
 
@@ -64,41 +91,15 @@
 
 
 
-    <script>
-                const selectionPropertiesElement = document.getElementById("cardContanier")
-                fetch("../../public/data/properties.json")
-                .then ((res) => res.json())
-                .then((data)=> {
-                    if (data.length > 0 ){
-                        for (let i = 0; i < 3; i++){
-                            selectionPropertiesElement.innerHTML += `
-                               <div class="card-item">
-                                    <div class="img-wrapper">
-                                        <img src="${data[i].images}">
-                                    </div>
-                                    <h2>${data[i].title.en}</h2> 
-                                    <h3>${data[i].location.address}</h3>
-                                    <h4>${data[i].price},${data[i].currency}</h4>
-                                        <div class="bed-bath">
-                                                <div class="bed"><h1><i class="fa-solid fa-bed icon-bed-bath"></i>${data[i].bedrooms} Bedroom</h1></div>
-                                                <div class="bath"><h1><i class="fa-solid fa-bath icon-bed-bath"></i>${data[i].bathrooms} Bathroom</h1></div>
-                                        </div>
-                                        <div class="view-detail">
-                                                <a href=""><h1>View Details</h1></a>
-                                        </div>
-                                </div>
-                            `
-                        console.log("have data")}
-                    }
-                })
-                
-    </script>
+   
 
 
 
 
 
 
+   <script type="text/javascript" src="index.js"></script>
 
 </body>
 </html>
+ 
