@@ -12,28 +12,50 @@
     <link rel="stylesheet" href="/styles/components/card.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
     <link rel="stylesheet" href="/styles/components/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
 
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    </style>
 </head>
 
-<body> HI
+<body class="">
 
     <!-- ===== NAV ===== -->
-    <nav class="nav" aria-label="Primary">
-        <div class="nav__bar container">
-            <a class="nav__brand" href="/">KH Realty</a>
-            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
+    <nav class="nav">
+        <!-- ==== NAV: SIDEBAR ==== -->
+        <div class="nav__sidebar__container">
+            <ul class="nav__list nav__sidebar">
+                <li onclick=hideSidebar()><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Rent</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Buy</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Agents</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Contact</a></li>
+            </ul>
         </div>
-        <ul class="nav__list container" id="navList">
-            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-        </ul>
+        <!-- ===== NAV ===== -->
+        <div class="nav__bar container">
+            <a href="#" class="nav__brand"><img src="public/assets/images/company/image 1.png" alt=""></a>
+            <ul class="nav__list">
+                <li class="nav__item hideOnMobile"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item hideOnMobile"><a href="#" class="nav__link">Rent</a></li>
+                <li class="nav__item hideOnMobile"><a href="#" class="nav__link">Buy</a></li>
+                <li class="nav__item hideOnMobile"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item hideOnMobile"><a href="#" class="nav__link">Agents</a></li>
+                <li class="nav__item hideOnMobile"><a href="#" class="nav__link">Contact</a></li>
+                <li class="menu__button" onclick=showSidebar()><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg></a></li>
+            </ul>
+            <div class="nav__button__container">
+                <button class="nav__button" id="darkModeToggle"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="M479.96-144Q340-144 242-242t-98-238q0-140 97.93-238t237.83-98q13.06 0 25.65 1 12.59 1 25.59 3-39 29-62 72t-23 92q0 85 58.5 143.5T648-446q49 0 92-23t72-62q2 13 3 25.59t1 25.65q0 139.9-98.04 237.83t-238 97.93Zm.04-72q82 0 148.78-47.07Q695.55-310.15 727-386q-20 5-39.67 8.5Q667.67-374 648-374q-113.86 0-193.93-80.07Q374-534.14 374-648q0-19.67 3.5-39.33Q381-707 386-727q-75.85 31.45-122.93 98.22Q216-562 216-480q0 110 77 187t187 77Zm-14-250Z"/></svg> Dark Mode</button>
+            </div>
+        </div>
     </nav>
 
     <!-- ===== HERO: Search & Filter ===== -->
@@ -62,41 +84,15 @@
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Featured Properties</h2>
+            <p class="section__subtitle">Handpicked modern homes for you</p>
         </div>
 
         <div class="scroller" aria-label="Featured properties">
             <div class="scroller__track">
                 <!-- Group A -->
-                <div class="scroller__group">
-                    <a class="card" href="/property/1">
-                        <img class="card__media" src="https://picsum.photos/640/400?1"
-                            alt="Modern apartment near AEON Mall" />
-                        <div class="card__body">
-                            <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
-                            <div class="card__meta">$350 / month • 2BR</div>
-                            <span class="badge">Available</span>
-                        </div>
-                    </a>
-                    <a class="card" href="/property/2">
-                        <img class="card__media" src="https://picsum.photos/640/400?2"
-                            alt="Cozy student room near ITC" />
-                        <div class="card__body">
-                            <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
-                            <div class="card__meta">$80 / month • 1BR</div>
-                            <span class="badge">Available</span>
-                        </div>
-                    </a>
-                    <a class="card" href="/property/3">
-                        <img class="card__media" src="https://picsum.photos/640/400?3" alt="Family house in Sen Sok" />
-                        <div class="card__body">
-                            <h3 class="card__title">Family House — Sen Sok</h3>
-                            <div class="card__meta">$78,000 • 3BR</div>
-                            <span class="badge">For Sale</span>
-                        </div>
-                    </a>
+                <div class="scroller__group" id="section__featured">
+                    
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -109,21 +105,21 @@
         </div>
         <div class="card-grid-groups" aria-label="Property categories">
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
+                <img class="card-top__media" src="https://cbre.com.kh/wp-content/uploads/2023/04/1.png" alt="Rooms" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Rooms</h3>
                     <div class="card-top__meta">Budget stays</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?5" alt="Apartments" />
+                <img class="card-top__media" src="public/assets/images/properties/apartments/apartment-3.jpg" alt="Apartments" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Apartments</h3>
                     <div class="card-top__meta">City living</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?6" alt="Houses" />
+                <img class="card-top__media" src="https://propertyhotshot.com/wp-content/uploads/2025/05/How-to-buy-a-property-in-Lagos-Nigeria.png" alt="Houses" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Houses</h3>
                     <div class="card-top__meta">Family homes</div>
@@ -140,21 +136,21 @@
         </div>
         <div class="card-grid-groups" aria-label="Latest properties">
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?7" alt="Studio near BKK1" />
+                <img class="card-top__media" src="https://www.starestate.in/api/star_estate/blogs/cozystudioapartmentwithbedroomlivingspace1716268571.webp" alt="Studio near BKK1" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Studio — BKK1</h3>
                     <div class="card-top__meta">$250 / month</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?8" alt="Condo in Chroy Changvar" />
+                <img class="card-top__media" src="https://www.kiavi.com/hubfs/Imported_Blog_Media/Condo_Maintainence-2-2.jpg" alt="Condo in Chroy Changvar" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Condo — Chroy Changvar</h3>
                     <div class="card-top__meta">$560 / month</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?9" alt="Townhouse in Russey Keo" />
+                <img class="card-top__media" src="https://www.summithomes.com.au/wp-content/uploads/2023/05/multi-units.jpg" alt="Townhouse in Russey Keo" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Townhouse — Russey Keo</h3>
                     <div class="card-top__meta">$120,000</div>
@@ -169,28 +165,8 @@
             <h2 class="section__title">Meet Our Agents</h2>
             <a class="section__link" href="#">Show More</a>
         </div>
-        <div class="section__agents">
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=12" alt="Agent Dara" />
-                <div>
-                    <div><strong>Dara</strong> • Phnom Penh</div>
-                    <div class="card__meta">Apartments & rooms</div>
-                </div>
-            </div>
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=32" alt="Agent Sreyneang" />
-                <div>
-                    <div><strong>Sreyneang</strong> • Siem Reap</div>
-                    <div class="card__meta">Houses & land</div>
-                </div>
-            </div>
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=22" alt="Agent Vuthy" />
-                <div>
-                    <div><strong>Vuthy</strong> • Battambang</div>
-                    <div class="card__meta">Budget rentals</div>
-                </div>
-            </div>
+        <div class="section__card__container" id="section__agents">
+            
         </div>
     </section>
 
@@ -199,20 +175,18 @@
         <div class="container why">
             <h2 class="section__title" style="margin:0 0 8px">Why Choose KH Realty?</h2>
             <ul class="why__list">
-                <li>Affordable options for students and workers</li>
-                <li>Bilingual support (Khmer & English)</li>
-                <li>Verified agents across key districts</li>
+                <li>Local Expertise & Trusted Agents</li>
+                <li>Vast Portfolio of Modern Homes</li>
+                <li>Seamless & Secure Process</li>
             </ul>
 
             <h2 class="section__title" style="margin:0 0 8px">Inquiry Form</h2>
             <form class="inquiry form" action="#">
                 <div class="form__group">
-                    <label for="inq-name">Your name</label>
-                    <input class="input" id="inq-name" type="text" placeholder="e.g., Sokha" required>
-                </div>
-                <div class="form__group">
-                    <label for="inq-email">Email</label>
-                    <input class="input" id="inq-email" type="email" placeholder="you@example.com" required>
+                    <label for="inq-info">Information</label>
+                    <input class="input" id="inq-name" type="text" placeholder="Full name" required>
+                    <input class="input" id="inq-email" type="email" placeholder="Email address" required>
+                    <input class="input" id="inq-email" type="number" placeholder="Phone number" required>
                 </div>
                 <div class="form__group">
                     <label for="inq-msg">Message</label>
@@ -232,16 +206,16 @@
             <div class="scroller__track">
                 <div class="scroller__group" id="testimonials" aria-label="Testimonials">
                     <blockquote class="quote card">
-                        <p>“Found a clean room near campus in 2 days. Love the Khmer support.”</p>
-                        <div class="quote__name">— Sopheak, Student</div>
+                        <p>“Very easy to use. I found a good apartment fast.”</p>
+                        <div class="quote__name">— Sokha L</div>
                     </blockquote>
                     <blockquote class="quote card">
-                        <p>“Great agents and fair prices. Easy on mobile.”</p>
-                        <div class="quote__name">— Rina, Receptionist</div>
+                        <p>“Clear info and real prices. Helped me choose quickly.”</p>
+                        <div class="quote__name">— Dara M</div>
                     </blockquote>
                     <blockquote class="quote card">
-                        <p>“Transparent listings and quick replies.”</p>
-                        <div class="quote__name">— Vuthy, Technician</div>
+                        <p>“Simple and helpful website. Got a response the same day.”</p>
+                        <div class="quote__name">— Chenda R</div>
                     </blockquote>
                 </div>
             </div>
@@ -269,7 +243,7 @@
     <footer class="footer">
         <div class="footer__grid container">
             <div>
-                <strong>KH Realty</strong><br />
+                <img src="public/assets/images/company/image 1.png" alt="" class="nav__brand"><br />
                 <span class="footer__small">Helping Cambodians find homes easily.</span>
             </div>
             <nav aria-label="Footer">
@@ -278,19 +252,20 @@
             </nav>
         </div>
         <div class="container" style="margin-top:10px">
-            <small class="footer__small">© 2025 KH Realty</small>
+            <small class="footer__small">© 2025 Apple KH Real Estate. All right reserved.</small>
         </div>
     </footer>
 
     <script>
         // Mobile nav toggle
-        const nav = document.querySelector('.nav');
-        const navToggle = document.getElementById('navToggle');
-        navToggle?.addEventListener('click', () => {
-            const open = nav.classList.toggle('nav--open');
-            navToggle.setAttribute('aria-expanded', String(open));
-            console.log(String(open));
-        });
+        function showSidebar(){
+            const sidebar = document.querySelector('.nav__sidebar__container')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const hidebar = document.querySelector('.nav__sidebar__container')
+            hidebar.style.display = 'none'
+        }
 
         // Select
         new SlimSelect({
@@ -302,7 +277,26 @@
         })
     </script>
 
-    <script src="/scripts/scroller.js"></script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        // Load saved mode or default to light
+        const savedMode = localStorage.getItem('mode') || 'light';
+        if (savedMode === 'dark') {
+            document.body.classList.add('dark__mode');
+        } else {
+            document.body.classList.remove('dark__mode');
+        }
+
+        // Toggle dark mode on button click
+        darkModeToggle.onclick = () => {
+            document.body.classList.toggle('dark__mode');
+            const mode = document.body.classList.contains('dark__mode') ? 'dark' : 'light';
+            localStorage.setItem('mode', mode);
+        };
+    </script>
+
+    <!-- <script src="/scripts/scroller.js"></script> -->
     <script src="/scripts/index.js"></script>
 </body>
 

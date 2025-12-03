@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test--code</title>
+
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+        }
+        .dark--mode {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+
+    <style>
+
+.company-logo {
+width: 200px;   /* set your image width */
+height: 100px;  /* set your image height */
+background-image: url("public/assets/images/company/image 2.png"); /* light mode */
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+transition: background-image 0.3s ease-in-out;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+.company-logo {
+background-image: url("public/assets/images/company/image 1.png"); /* dark mode */
+}
+}
+
+    </style>
+
+</head>
+
+<body class="dark--mode">
+
+    <button id="dark--mode--toggle">Dark Mode</button>
+
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;">Hello World</h1>
+
+    <script>
+
+        const darkModeToggle = document.getElementById("dark--mode--toggle");
+
+        // Load saved mode
+        if (localStorage.getItem("mode") === "dark") {
+        document.body.classList.add("dark--mode");
+        }
+
+        // Toggle mode
+        darkModeToggle.onclick = () => {
+        document.body.classList.toggle("dark--mode");
+
+        if (document.body.classList.contains("dark--mode")) {
+            localStorage.setItem("mode", "dark");
+        } else {
+            localStorage.setItem("mode", "light");
+        }
+        };
+
+    </script>
+
+</body>
+
+<body>
+    <!-- HTML -->
+
+<div class="company-logo" role="img" aria-label="Company Logo"></div>
+
+</body>
+</html>

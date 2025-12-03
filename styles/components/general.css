@@ -12,8 +12,9 @@
   padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: #fff;
+  background: var(--bg-one);
   font-family: var(--font-family);
+  color: var(--text);
 }
 
 .form__group {
@@ -27,7 +28,11 @@
   padding: 12px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: #fff;
+  background: var(--bg-one);
+}
+
+.input::placeholder {
+  color: var(--text);
 }
 
 .btn {

@@ -2,7 +2,7 @@
   {
     "id": 301,
     "full_name": "Sok Dara",
-    "profile_photo": "images/agents/sok_dara.jpg",
+    "profile_photo": "public/assets/images/agent/sok_dara.jpg",
     "contact": {
       "phone": "010-234-567",
       "email": "sok.dara@cityhomes.com"
@@ -12,7 +12,7 @@
   {
     "id": 302,
     "full_name": "Chan Vibol",
-    "profile_photo": "images/agents/chan_vibol.jpg",
+    "profile_photo": "public/assets/images/agent/chan_vibol.jpg",
     "contact": {
       "phone": "011-456-789",
       "email": "chan.vibol@cityhomes.com"
@@ -22,7 +22,7 @@
   {
     "id": 303,
     "full_name": "Kim Sreypov",
-    "profile_photo": "images/agents/kim_sreypov.jpg",
+    "profile_photo": "public/assets/images/agent/kim_sreypov.jpg",
     "contact": {
       "phone": "012-678-345",
       "email": "kim.sreypov@cityhomes.com"

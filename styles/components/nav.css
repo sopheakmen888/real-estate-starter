@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: var(--surface);
+  background: var(--bg-one);
   border-bottom: 1px solid var(--line);
 }
 
@@ -16,28 +16,61 @@
 .nav__brand {
   font-weight: 800;
   letter-spacing: 0.2px;
+  width: 54px;
+  height: 25px;
 }
 
-.nav__toggle {
+button {
   background: transparent;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 8px 10px;
+  padding: 10px 15px;
+  color: var(--text);
+}
+
+.nav__button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-family: var(--font-family);
 }
 
+.nav__sidebar-item {
+  color: var(--text);
+}
+
 .nav__list {
-  display: none;
+  display: flex;
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 8px 16px;
-  border-top: 1px solid var(--line);
   background: var(--surface);
+}
+
+.nav__sidebar__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;                                                                            
+  z-index: 999;
+  background-color: var(--bg-one);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;  
+}
+
+
+.nav__sidebar {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;                                                                                                                                                                                                                                  
 }
 
 .nav__item {
   padding: 10px 0;
-  border-bottom: 1px dashed var(--line);
 }
 
 .nav__item:last-child {
@@ -45,10 +78,47 @@
 }
 
 .nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.menu__button {
+  display: none;
+}
+
+.nav__link:hover {
+  color: var(--accent);
 }
 
 .nav--open .nav__list {
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .menu__button {
+    display: block;
+  }
+  .nav__button__container {
+    display: none;
+  }
+  .hero__searchbar .icon {
+    z-index: 1;
+  }
+  
+}
+@media (max-width: 500px) {
+  .nav__sidebar__container {
+    width: 100%;
+  }
+  .hero__title {
+  font-size: 1.8rem;
+  }
+  .hero__subtitle {
+  font-size: 1rem;
+  }
+  
 }
