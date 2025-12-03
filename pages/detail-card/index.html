@@ -1,245 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail | Apple Real Estate</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/components/nav-second.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/components/footer.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" />
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/components/nav-second.css" />
+    <link rel="stylesheet" href="../../styles/components/card-items.css" />
+    <link rel="stylesheet" href="../../styles/components/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/public/assets/images/company/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap"
+    />
+  </head>
+  <body>
     <!-- ===== NAV ===== -->
     <header class="navbar-content">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/index.html#heroSection"><img src="../../public/assets/images/logo.png" alt=""></a>
-            </div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/index.html#heroSection"
+            ><img src="../../public/assets/images/logo.png" alt=""
+          /></a>
+        </div>
 
-            <div class="nav-links">
-                <ul class="sidebar">
-                    <li><button class="close-btn" onclick="hideSidebar()">
-                          <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </li>
-                    
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../rent/index.html">Rent</a></li>
-                    <li><a href="../buy/index.html">Buy</a></li>
-                    <li><a href="../agents/index.html">Agents</a></li>
-                    <li><a href="../about/index.html">About</a></li>
-                    <li><a href="../contact/index.html">Contact</a></li>
-                </ul>
+        <div class="nav-links">
+          <ul class="sidebar">
+            <li>
+              <button class="close-btn" onclick="hideSidebar()">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </li>
 
-                <ul>
-                    <li><a class="hideOnMobile" href="../../index.html">Home</a></li>
-                    <li><a class="hideOnMobile" href="../rent/index.html">Rent</a></li>
-                    <li><a class="hideOnMobile" href="../buy/index.html">Buy</a></li>
-                    <li><a class="hideOnMobile" href="../agents/index.html">Agents</a></li>
-                    <li><a class="hideOnMobile" href="../about/index.html">About</a></li>
-                    <li><a class="hideOnMobile" href="../contact/index.html">Contact</a></li>
-                </ul>
-            </div>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../rent/index.html">Rent</a></li>
+            <li><a href="../buy/index.html">Buy</a></li>
+            <li><a href="../agents/index.html">Agents</a></li>
+            <li><a href="../about/index.html">About</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+          </ul>
 
-             <div class="nav-actions">
-                <div class="nav-btn" onclick="toggleTheme(); return false;">
-                    <a href="#"><i class="fas fa-moon"></i> Dark</a>
-                </div>
+          <ul>
+            <li><a class="hideOnMobile" href="../../index.html">Home</a></li>
+            <li><a class="hideOnMobile" href="../rent/index.html">Rent</a></li>
+            <li><a class="hideOnMobile" href="../buy/index.html">Buy</a></li>
+            <li>
+              <a class="hideOnMobile" href="../agents/index.html">Agents</a>
+            </li>
+            <li>
+              <a class="hideOnMobile" href="../about/index.html">About</a>
+            </li>
+            <li>
+              <a class="hideOnMobile" href="../contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-                <a class="menu-btn" onclick="showSidemenu()" href="javascript:void(0)">
-                    <i class="fas fa-bars"></i>
-                </a>
+        <div class="nav-actions">
+          <div class="nav-btn" onclick="toggleTheme(); return false;">
+            <a href="#"><i class="fas fa-moon"></i> Dark</a>
+          </div>
 
-                <script src="../../scripts/index.js"></script>
-            </div>
-
-            <script>
-                // show sidebar
-                function showSidemenu() {
-                    const sidebar = document.querySelector('.sidebar');
-                    sidebar.style.display = 'flex';
-                }
-
-                // hide sidebar
-                function hideSidebar() {
-                    const sidebar = document.querySelector('.sidebar'); // use same variable
-                    sidebar.style.display = 'none'; // hide sidebar
-                }
-
-            </script>
-        </nav>
+          <a
+            class="menu-btn"
+            onclick="showSidemenu()"
+            href="javascript:void(0)"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+      </nav>
     </header>
 
-    <section class="container">
-        <div class="detail-cols">
-            <div class="left-cols">
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-
-
-                    <div thumbsSlider="" class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                    <script src="/scripts/index.js"></script>
-            </div>
-
-            <div class="right-cols">
-                <div class="title-cols">
-                    <h1>Studio Apartment</h1>
-                </div>
-
-                <div class="location-cols">
-                    <span><i class="fas fa-home"></i> Apartment</span>
-                    <span><i class="fas fa-map-marker-alt"></i>Toul Kork</span>
-                </div>
-
-                <div class="location-cols">
-                    <span><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
-                    <span><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
-                    <span><i class="fas fa-shield-alt"></i> Secure 100%</span>
-                    <span><i class="far fa-calendar"></i> Since: <strong>2025-11-10</strong></span>
-                </div>
-
-                <div class="feature-cols">
-                    <h1>Feature</h1>
-
-                    <div class="cols-content">
-                        <span><i class="far fa-dot-circle"></i> Gym</span>
-                        <span><i class="far fa-dot-circle"></i> Balcony</span>
-                        <span><i class="far fa-dot-circle"></i> Parking</span>
-                    </div>
-                </div>
-
-                <div class="description-cols">
-                    <h1>Description</h1>
-                    <p>
-                        Discover the ideal urban living space in this fully furnished studio unit, perfectly situated on the 6th floor of TK Star
-                        Condo in TK. With a generous gross area of 52.49 square meters (net 40.2 sqm), this thoughtfully designed unit combines
-                        comfort and practicality, offering an efficient layout that maximizes both space and functionality. Ready for immediate 
-                        occupancy, it comes fully furnished with quality fixtures and fittings, allowing you to move in effortlessly and start enjoying
-                        your new home from day one.
-
-                        <br><br>
-
-                        This unit also offers the advantages of long-term investment with its freehold title, providing peace of mind and lasting 
-                        value. Ideally located opposite TK Avenue, residents enjoy unmatched convenience with a wide array of international schools, 
-                        office buildings, shopping centers, and lifestyle amenities just steps away. Perfect for professionals, expatriates, or 
-                        anyone seeking a modern, hassle-free urban lifestyle, this studio truly embodies both comfort and convenience in one 
-                        exceptional package.
-                    </p>
-                </div>
-
-                <div class="map">
-                    <h1>Location</h1>
-
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3909.101286338943!2d104.8865743!3d11.5445916!3m2!1i1024!2i768!4f13.1!2m1!1spse%20institute!5e0!3m2!1sen!2skh!4v1764572232016!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-                <div class="form-detail">
-                    <h1>Agent Contact </h1>
-                    <p>Have questions or want a viewing? Get in touch for quick support and property details.</p>
-
-                    <form action="">
-                        <div class="subscribe__row">
-                            <label for="">Full name</label>
-                            <input class="input" type="text" placeholder="Enter your fullname" aria-label="Name">
-                        </div>
-
-                        <div class="subscribe__row">
-                            <label for="">Email</label>
-                            <input class="input" type="email" placeholder="Enter your email" aria-label="Name">
-                        </div>
-
-                        <div class="subscribe__row">
-                            <label for="">How can agent help?</label>
-                            <textarea name="" id="" placeholder="Enter your message..."></textarea>
-                        </div>
-
-                        <div class="subscribe__row">
-                            <input class="sub-btn" type="submit" value="Subscribe">
-                        </div>  
-                    </form>
-                </div>
-            </div>
-        </div>
+    <section class="container" id="detailCols">
+      <div class="detail-cols"></div>
     </section>
 
+    <div class="container">
+      <h1 class="relate-title">Related to</h1>
 
+      <div class="card-grid-groups" id="saleColsCard"></div>
+    </div>
 
     <footer class="footer">
-        <div class="img-footer">
-            <a href="/index.html"><img src="/public/assets/images/logo.png" alt=""></a>
-        </div>
+      <div class="img-footer">
+        <a href="/index.html"
+          ><img src="/public/assets/images/logo.png" alt=""
+        /></a>
+      </div>
 
-        <div class="footer-infor">
-            <h1>Excellence <span>Defined</span>. Lifestyle <span>Redefined</span>.</h1>
-            <p>We are committed to delivering premium real estate solutions that blend modern living with long-term value. With a focus on quality, innovation, and customer satisfaction, we create spaces that inspire and elevate everyday life. Your future begins with a home built on excellence.</p>
-        </div>
+      <div class="footer-infor">
+        <h1>
+          Excellence <span>Defined</span>. Lifestyle <span>Redefined</span>.
+        </h1>
+        <p>
+          We are committed to delivering premium real estate solutions that
+          blend modern living with long-term value. With a focus on quality,
+          innovation, and customer satisfaction, we create spaces that inspire
+          and elevate everyday life. Your future begins with a home built on
+          excellence.
+        </p>
+      </div>
 
-        <div class="footer-contact">
-            <p>CONTACT US:</p>
-             <div class="contact-cols">
-                <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
-                <span><i class="fas fa-envelope"></i> example@gmail.com</span>
-             </div>
+      <div class="footer-contact">
+        <p>CONTACT US:</p>
+        <div class="contact-cols">
+          <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
+          <span><i class="fas fa-envelope"></i> example@gmail.com</span>
         </div>
+      </div>
 
-        <nav aria-label="footer-links">
-                <div class="footer__small">
-                    <a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> • <a href="#">Contact</a>
-                </div>
-        </nav>
-
-        <div class="copyright">
-            <small>© 2025 Apple KH Real Estate. All Rights Reserved.</small>
+      <nav aria-label="footer-links">
+        <div class="footer__small">
+          <a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> •
+          <a href="#">Contact</a>
         </div>
+      </nav>
+
+      <div class="copyright">
+        <small>© 2025 Apple KH Real Estate. All Rights Reserved.</small>
+      </div>
     </footer>
-</body>
+    <script>
+      // show sidebar
+      function showSidemenu() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      // hide sidebar
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar"); // use same variable
+        sidebar.style.display = "none"; // hide sidebar
+      }
+    </script>
+    <script src="../../scripts/index.js"></script>
+    <script src="index.js"></script>
+    <script src="relate.js"></script>
+  </body>
 </html>

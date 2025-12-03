@@ -12,7 +12,6 @@
     gap: 12px;
     border-radius: 12px;
     cursor: pointer;
-    background-color: var(--card);
     position: relative;
 }
 
@@ -176,6 +175,10 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.relate-title {
+    font-size: 28px;
 }
 
 
