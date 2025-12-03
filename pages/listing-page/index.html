@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listing-page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/components/nav.css">
+    <link rel="stylesheet" href="../../styles/components/card-top.css">
+    <link rel="stylesheet" href="../../styles/components/card.css">
+    <link rel="stylesheet" href="../../styles/components/card-items.css">
+    <link rel="stylesheet" href="../../styles/components/general.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/scroller.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+    <header class="navbar-content"> 
+        <nav class="navbar">
+            <div class="logo">
+                <a href=""><img src="../../public/assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li><a onclick="hideSidebar()" href=""><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="">Rent</a></li>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="">Agents</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a class="hideOnMobile active" href="">Home</a></li>
+                    <li><a class="hideOnMobile" href="">Rent</a></li>
+                    <li><a class="hideOnMobile" href="">Buy</a></li>
+                    <li><a class="hideOnMobile" href="">Agents</a></li>
+                    <li><a class="hideOnMobile" href="">About</a></li>
+                    <li><a class="hideOnMobile" href="">Contact</a></li>
+                    <li><a class="hideOnMobile menu-btn" onclick="showSidemenu()" href="javascript:void(0)"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <a href=""><i class="fas fa-moon"></i> Dark</a>
+                
+            </div>
+
+            <script>
+                function showSidemenu(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+
+                function hideSidebar(){
+                    const hideSidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </nav>
+    </header>
+
+    <section class="main-section">
+            <div class="filter">
+                <h3 class="t-filter">Filter</h3>
+                <div class="t-btn">
+                    <button class="btn-sell">For sales</button>
+                    <button class="btn-rent">For rents</button>
+                </div>
+            </div>
+
+            <div class="filter">
+                <h3 class="t-filter">Price</h3>
+                <div class="t-btn">
+                    <button class="btn-sell">Low</button>
+                    <button class="btn-rent">High</button>
+                </div>
+            </div>
+
+            <div class="filter">
+                <h3 class="t-filter">Filter</h3>
+                <div class="t-btn">
+                    <button class="btn-sell">House</button>
+                    <button class="btn-rent">Condo</button>
+                    <button class="btn- extra">Apartments</button> 
+                </div>
+            </div>
+
+    </section>
+
+    <section class="listing-content">
+        <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+            
+    </section>
+    
+
+    <section class="listing-content">
+        <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+    </section>
+
+    <section class="listing-content">
+        
+        <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-items">
+                <div class="card-items_media">
+                    <img src="https://picsum.photos/640/400?7" alt="">
+                </div>
+
+                <div class="card-items__body">
+                    <div class="top-cols-item">
+                        <h2>USD 150,000 <span>/ year</span></h2>
+                        <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                    </div>
+
+                    <h1 class="title-cols">Premium Family House</h1>
+                    <p class="txt-cols">Beoung Keng Kong 1</p>
+                    <small>
+                        <i class="fa-solid fa-bed"></i> 2 Bedroom
+                        <i class="fa-solid fa-bath"></i> 2 Bathroom
+                    </small>
+
+                    <div class="card-btn">
+                        <a href="">View Detail</a>
+                    </div>
+                </div>
+            </article>
+    </section>
+
+    <section class="btn-click">
+        <button"><i class="fas fa-chevron-left"></i></button>
+        <button class="click" style="background-color: black; color: white;">01</button>
+        <button class="click">02</button>
+        <button class="click">...</button>
+        <button><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <section class="feature">
+        <h1 class="t-feature">Features Offers</h1>
+        <div class="card-feature">
+            <article class="card-items">
+                    <div class="card-items_media">
+                        <img src="https://picsum.photos/640/400?7" alt="">
+                    </div>
+
+                    <div class="card-items__body">
+                        <div class="top-cols-item">
+                            <h2>USD 150,000 <span>/ year</span></h2>
+                            <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                        </div>
+
+                        <h1 class="title-cols">Premium Family House</h1>
+                        <p class="txt-cols">Beoung Keng Kong 1</p>
+                        <small>
+                            <i class="fa-solid fa-bed"></i> 2 Bedroom
+                            <i class="fa-solid fa-bath"></i> 2 Bathroom
+                        </small>
+
+                        <div class="card-btn">
+                            <a href="">View Detail</a>
+                        </div>
+                    </div>
+            </article>
+
+            <article class="card-items">
+                    <div class="card-items_media">
+                        <img src="https://picsum.photos/640/400?7" alt="">
+                    </div>
+
+                    <div class="card-items__body">
+                        <div class="top-cols-item">
+                            <h2>USD 150,000 <span>/ year</span></h2>
+                            <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                        </div>
+
+                        <h1 class="title-cols">Premium Family House</h1>
+                        <p class="txt-cols">Beoung Keng Kong 1</p>
+                        <small>
+                            <i class="fa-solid fa-bed"></i> 2 Bedroom
+                            <i class="fa-solid fa-bath"></i> 2 Bathroom
+                        </small>
+
+                        <div class="card-btn">
+                            <a href="">View Detail</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-items">
+                    <div class="card-items_media">
+                        <img src="https://picsum.photos/640/400?7" alt="">
+                    </div>
+
+                    <div class="card-items__body">
+                        <div class="top-cols-item">
+                            <h2>USD 150,000 <span>/ year</span></h2>
+                            <small><i class="fa-solid fa-star"></i> 4.9/5.0</small>
+                        </div>
+
+                        <h1 class="title-cols">Premium Family House</h1>
+                        <p class="txt-cols">Beoung Keng Kong 1</p>
+                        <small>
+                            <i class="fa-solid fa-bed"></i> 2 Bedroom
+                            <i class="fa-solid fa-bath"></i> 2 Bathroom
+                        </small>
+
+                        <div class="card-btn">
+                            <a href="">View Detail</a>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="img-footer">
+            <a href=""><img src="/public/assets/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="footer-infor">
+            <h1>Excellence <span>Defined</span>. Lifestyle <span>Redefined</span>.</h1>
+            <p>We are committed to delivering premium real estate solutions that blend modern living with long-term value. With a focus on quality, innovation, and customer satisfaction, we create spaces that inspire and elevate everyday life. Your future begins with a home built on excellence.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p>CONTACT US:</p>
+             <div class="contact-cols">
+                <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
+                <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+             </div>
+        </div>
+
+        <nav aria-label="footer-links">
+                <div class="footer__small">
+                    <a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> • <a href="#">Contact</a>
+                </div>
+        </nav>
+
+        <div class="copyright">
+            <small>© 2025 Apple KH Real Estate. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

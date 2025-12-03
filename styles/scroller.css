@@ -8,13 +8,14 @@
   width: max-content;
   gap: 1rem;
   will-change: transform;
-  animation: marquee var(--marquee-duration, 5s) linear infinite;
+  animation: marquee var(--marquee-duration) linear infinite;
 }
 
 .scroller__group {
   display: flex;
   align-items: stretch;
   gap: 1rem;
+  margin-bottom: 24px;
 }
 
 .scroller::-webkit-scrollbar {

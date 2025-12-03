@@ -1,0 +1,74 @@
+.container {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container h1 {
+  text-align: left;
+}
+
+#featureList {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.card {
+  display: block; /* since they're <a> now */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card__media {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 12px 4px;
+}
+
+.card__body small {
+  display: block;
+  color: var(--muted);
+}
+
+.card__title {
+  margin: 0 0 6px;
+  font-size: 1.30rem;
+  display: inline-block;
+}
+
+.badge {
+  float: inline-end;
+  color: var(--muted);
+}
+
+.card__meta {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--acent-hover);
+}
+
+/* .btn {
+  width: none;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn a {
+  padding: 12px 24px;
+} */

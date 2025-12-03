@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Apple Real Estate</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/components/nav-second.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/components/footer.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" />
+</head>
+<body>
+    <!-- ===== NAV ===== -->
+    <header class="navbar-content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html#heroSection"><img src="../../public/assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li><button class="close-btn" onclick="hideSidebar()">
+                          <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                    
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../rent/index.html">Rent</a></li>
+                    <li><a href="../buy/index.html">Buy</a></li>
+                    <li><a href="../agents/index.html">Agents</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a class="active" href="">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a class="hideOnMobile" href="../../index.html">Home</a></li>
+                    <li><a class="hideOnMobile" href="../rent/index.html">Rent</a></li>
+                    <li><a class="hideOnMobile" href="../buy/index.html">Buy</a></li>
+                    <li><a class="hideOnMobile" href="../agents/index.html">Agents</a></li>
+                    <li><a class="hideOnMobile" href="../about/index.html">About</a></li>
+                    <li><a class="hideOnMobile active" href="">Contact</a></li>
+                </ul>
+            </div>
+
+             <div class="nav-actions">
+                <div class="nav-btn" onclick="toggleTheme(); return false;">
+                    <a href="#"><i class="fas fa-moon"></i> Dark</a>
+                </div>
+
+                <a class="menu-btn" onclick="showSidemenu()" href="javascript:void(0)">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <script src="../../scripts/index.js"></script>
+            </div>
+
+            <script>
+                // show sidebar
+                function showSidemenu() {
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'flex';
+                }
+
+                // hide sidebar
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar'); // use same variable
+                    sidebar.style.display = 'none'; // hide sidebar
+                }
+
+            </script>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="contact-title">
+            <h1>Get in touch with us!</h1>
+            <p>We’re here to help you to get in touch with us, <br>
+                please fill out the information below.</p>
+        </div>
+
+        <div class="contact-us-cols">
+            <div class="left-cols">
+                <form action="">
+                    <div class="subscribe__row">
+                        <label for="">Full name</label>
+                        <input class="input" type="text" placeholder="Enter your fullname" aria-label="Name">
+                    </div>
+
+                    <div class="subscribe__row">
+                        <label for="">Email</label>
+                        <input class="input" type="email" placeholder="Enter your email" aria-label="Name">
+                    </div>
+
+                    <div class="subscribe__row">
+                        <label for="">How can agent help?</label>
+                        <textarea name="" id="" placeholder="Enter your message..."></textarea>
+                    </div>
+
+                    <div class="subscribe__row">
+                        <input class="sub-btn" type="submit" value="Subscribe">
+                    </div>  
+                </form>
+            </div>
+
+            <div class="right-cols">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3909.101286338943!2d104.8865743!3d11.5445916!3m2!1i1024!2i768!4f13.1!2m1!1spse%20institute!5e0!3m2!1sen!2skh!4v1764522323706!5m2!1sen!2skh"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="img-footer">
+            <a href="/index.html"><img src="/public/assets/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="footer-infor">
+            <h1>Excellence <span>Defined</span>. Lifestyle <span>Redefined</span>.</h1>
+            <p>We are committed to delivering premium real estate solutions that blend modern living with long-term value. With a focus on quality, innovation, and customer satisfaction, we create spaces that inspire and elevate everyday life. Your future begins with a home built on excellence.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p>CONTACT US:</p>
+             <div class="contact-cols">
+                <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
+                <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+             </div>
+        </div>
+
+        <nav aria-label="footer-links">
+                <div class="footer__small">
+                    <a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> • <a href="#">Contact</a>
+                </div>
+        </nav>
+
+        <div class="copyright">
+            <small>© 2025 Apple KH Real Estate. All Rights Reserved.</small>
+        </div>
+    </footer>
+</body>
+</html>

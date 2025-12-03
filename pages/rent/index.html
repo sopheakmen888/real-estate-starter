@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent | Apple Real Estate</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/components/nav-second.css">
+    <link rel="stylesheet" href="../../styles/components/card-items.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" />
+</head>
+<body>
+    <!-- ===== NAV ===== -->
+    <header class="navbar-content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html#heroSection"><img src="../../public/assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li><button class="close-btn" onclick="hideSidebar()">
+                          <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                    
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a class="active" href="">Rent</a></li>
+                    <li><a href="../buy/index.html">Buy</a></li>
+                    <li><a href="../agents/index.html">Agents</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a class="hideOnMobile" href="../../index.html">Home</a></li>
+                    <li><a class="hideOnMobile active" href="">Rent</a></li>
+                    <li><a class="hideOnMobile" href="../buy/index.html">Buy</a></li>
+                    <li><a class="hideOnMobile" href="../agents/index.html">Agents</a></li>
+                    <li><a class="hideOnMobile" href="../about/index.html">About</a></li>
+                    <li><a class="hideOnMobile" href="../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+
+             <div class="nav-actions">
+                <div class="nav-btn" onclick="toggleTheme(); return false;">
+                    <a href="#"><i class="fas fa-moon"></i> Dark</a>
+                </div>
+
+                <a class="menu-btn" onclick="showSidemenu()" href="javascript:void(0)">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <script src="../../scripts/index.js"></script>
+            </div>
+
+            <script>
+                // show sidebar
+                function showSidemenu() {
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'flex';
+                }
+
+                // hide sidebar
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar'); // use same variable
+                    sidebar.style.display = 'none'; // hide sidebar
+                }
+
+            </script>
+        </nav>
+    </header>
+
+    <section class="container section-listing">
+        <div class="filter-content">
+            <div class="filter">
+                <h3 class="t-filter">Type</h3>
+                <div class="t-btn">
+                    <button class="btn-sell">For Sale</button>
+                    <button class="btn-rent">For Rent</button>
+                </div>
+            </div>
+
+            <div class="filter">
+                <h3 class="t-filter">Price</h3>
+                <div class="t-btn">
+                    <button class="btn-sell">Low</button>
+                    <button class="btn-rent">High</button>
+                </div>
+            </div>
+
+            <div class="filter">
+                <h3 class="t-filter">Property Type</h3>
+                <div class="t-btn">
+                    <button class="btn-sell">House</button>
+                    <button class="btn-rent">Condo</button>
+                    <button class="btn-extra">Apartment</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card-grid-groups" id="saleColsCard" aria-label="Latest properties">
+
+        </div>
+
+        <script src="index.js"></script>
+    </section>
+
+</body>
+</html>

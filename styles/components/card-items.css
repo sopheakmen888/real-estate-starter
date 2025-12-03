@@ -1,0 +1,167 @@
+
+.card-items {
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+/* Make image fill the whole card */
+.card-items_media {
+  width: 100%;
+  height: 230px;
+  border-radius: 12px;
+  opacity: 0.7;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card-items_media img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Text overlay at bottom */
+.card-items__body {
+  width: 100%;
+  height: 45%;  
+  margin-top: 6px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.card-items__body small {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.top-cols-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-cols-item h2 {
+  font-size: 18px;
+  color: var(--acent-hover);
+}
+
+.top-cols-item span {
+  color: var(--muted);
+}
+
+.top-cols-item small {
+  font-size: var(--text);
+  color: var(--text);
+}
+
+.top-cols-item i {
+  color: var(--acent-hover);
+}
+
+.title-cols {
+  font-size: 22px;
+  color: var(--text);
+}
+
+.txt-cols{
+  font-size: var(--body);
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-btn a {
+  width: 100%;
+  max-width: 26rem;
+  padding: 10px 0px;
+  margin-top: 6px;
+  color: var(--text-option);
+  background-color: var(--acent);
+  border-radius: 0.8rem;
+  transition: all .2s ease;
+}
+
+.card-btn a:hover {
+  background-color: var(--acent-hover);
+}
+
+/* Hover effect */
+.card-items:hover .card-items_media {
+  opacity: 1;
+}
+
+.card-top:hover {
+  transform: translateY(-4px);
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .card-items {
+    height: auto;
+    padding-bottom: 12px;
+  }
+
+  .card-items_media {
+    height: 200px;
+  }
+
+  .card-items__body {
+    height: auto;
+    margin-top: 8px;
+  }
+
+  .card-items__body small {
+    font-size: 14px;
+  }
+
+  .top-cols-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .top-cols-item small {
+    font-size: 14px;
+  }
+
+  .title-cols {
+    font-size: 1.5rem;
+  }
+
+  .txt-cols {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .card-btn a {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  /* Optional: reduce hover jump */
+  .card-top:hover {
+    transform: translateY(-2px);
+  }
+}

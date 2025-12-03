@@ -7,7 +7,9 @@
       "phone": "010-234-567",
       "email": "sok.dara@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Boeung Keng Kang",
+    "description": "Sok Dara specializes in high-end condos and investment sales in BKK."
   },
   {
     "id": 302,
@@ -17,7 +19,9 @@
       "phone": "011-456-789",
       "email": "chan.vibol@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Daun Penh",
+    "description": "Chan Vibol focuses on commercial shophouses and historic properties."
   },
   {
     "id": 303,
@@ -27,7 +31,9 @@
       "phone": "012-678-345",
       "email": "kim.sreypov@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Tuol Kouk",
+    "description": "Kim Sreypov specializes in modern Borey homes and land sales."
   },
   {
     "id": 304,
@@ -37,7 +43,9 @@
       "phone": "097-888-123",
       "email": "lim.rithy@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Chamkar Mon",
+    "description": "Lim Rithy manages high-end serviced apartments and villas."
   },
   {
     "id": 305,
@@ -47,7 +55,9 @@
       "phone": "069-445-889",
       "email": "men.sopheak@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Sen Sok",
+    "description": "Men Sopheak specializes in new residential and commercial developments."
   },
   {
     "id": 306,
@@ -57,7 +67,9 @@
       "phone": "015-998-221",
       "email": "touch.socheata@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Mean Chey",
+    "description": "Touch Socheata focuses on affordable and mid-range family housing."
   },
   {
     "id": 307,
@@ -67,7 +79,9 @@
       "phone": "093-445-210",
       "email": "phan.chenda@cityhomes.com"
     },
-    "languages": ["km", "zh"]
+    "languages": ["km", "zh"],
+    "district": "Chroy Changvar",
+    "description": "Phan Chenda specializes in riverside luxury condos and Mandarin-speaking clients."
   },
   {
     "id": 308,
@@ -77,7 +91,9 @@
       "phone": "099-177-334",
       "email": "vong.sovath@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Dangkao",
+    "description": "Vong Sovath is an expert in commercial leasing of warehouses and industrial spaces."
   },
   {
     "id": 309,
@@ -87,7 +103,9 @@
       "phone": "016-432-889",
       "email": "ros.lida@cityhomes.com"
     },
-    "languages": ["km", "en", "zh"]
+    "languages": ["km", "en", "zh"],
+    "district": "Boeung Keng Kang",
+    "description": "Ros Lida specializes in mixed-use commercial and residential buildings in BKK."
   },
   {
     "id": 310,
@@ -97,7 +115,9 @@
       "phone": "010-334-112",
       "email": "khim.borey@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Daun Penh",
+    "description": "Khim Borey specializes in traditional Khmer houses and renovation projects."
   },
   {
     "id": 311,
@@ -107,7 +127,9 @@
       "phone": "017-229-443",
       "email": "seyha.chan@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Tuol Kouk",
+    "description": "Seyha Chan focuses on high-quality residential properties in Tuol Kouk."
   },
   {
     "id": 312,
@@ -117,7 +139,9 @@
       "phone": "092-556-002",
       "email": "pich.sokha@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Chamkar Mon",
+    "description": "Pich Sokha provides local market insight for private Cambodian buyers."
   },
   {
     "id": 313,
@@ -127,7 +151,9 @@
       "phone": "086-667-990",
       "email": "ung.sovann@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Sen Sok",
+    "description": "Ung Sovann specializes in large-scale land acquisitions and infrastructure planning."
   },
   {
     "id": 314,
@@ -137,7 +163,9 @@
       "phone": "077-890-112",
       "email": "nhem.rasmey@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Mean Chey",
+    "description": "Nhem Rasmey specializes in properties near National Road 2 and developing areas."
   },
   {
     "id": 315,
@@ -147,7 +175,9 @@
       "phone": "088-266-900",
       "email": "korn.sopheap@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Chroy Changvar",
+    "description": "Korn Sopheap handles new borey sales and villa projects in Tonle Sap."
   },
   {
     "id": 316,
@@ -157,7 +187,9 @@
       "phone": "071-998-221",
       "email": "heng.dalis@cityhomes.com"
     },
-    "languages": ["km", "zh"]
+    "languages": ["km", "zh"],
+    "district": "Dangkao",
+    "description": "Heng Dalis specializes in large plots of land and agricultural conversions."
   },
   {
     "id": 317,
@@ -167,7 +199,9 @@
       "phone": "012-889-776",
       "email": "sann.vicheka@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Boeung Keng Kang",
+    "description": "Sann Vicheka provides rental services for professional expatriates in BKK."
   },
   {
     "id": 318,
@@ -177,7 +211,9 @@
       "phone": "015-776-120",
       "email": "reach.sina@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Daun Penh",
+    "description": "Reach Sina specializes in retail and small commercial space leasing near Central Market."
   },
   {
     "id": 319,
@@ -187,7 +223,9 @@
       "phone": "099-234-110",
       "email": "dara.chanthorn@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Tuol Kouk",
+    "description": "Dara Chanthorn handles sales of modern condos and apartments in Tuol Kouk."
   },
   {
     "id": 320,
@@ -197,7 +235,9 @@
       "phone": "068-440-998",
       "email": "leak.vannarith@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Chamkar Mon",
+    "description": "Leak Vannarith provides local knowledge of rental properties in Chamkar Mon."
   },
   {
     "id": 321,
@@ -207,7 +247,9 @@
       "phone": "092-881-223",
       "email": "sokmean.rith@cityhomes.com"
     },
-    "languages": ["km", "zh"]
+    "languages": ["km", "zh"],
+    "district": "Sen Sok",
+    "description": "Sokmean Rith specializes in new Borey developments for Cambodian and Chinese buyers."
   },
   {
     "id": 322,
@@ -217,7 +259,9 @@
       "phone": "081-990-122",
       "email": "sreymao.lorn@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Mean Chey",
+    "description": "Sreymao Lorn focuses on properties near infrastructure links and schools in Mean Chey."
   },
   {
     "id": 323,
@@ -227,7 +271,9 @@
       "phone": "095-887-001",
       "email": "keo.monirith@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Chroy Changvar",
+    "description": "Keo Monirith finds land parcels and development sites along the Mekong side."
   },
   {
     "id": 324,
@@ -237,7 +283,9 @@
       "phone": "096-552-007",
       "email": "sokheng.chiv@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Dangkao",
+    "description": "Sokheng Chiv specializes in property management and factory leasing in Dangkao."
   },
   {
     "id": 325,
@@ -247,7 +295,9 @@
       "phone": "010-667-889",
       "email": "ly.chantrea@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Boeung Keng Kang",
+    "description": "Ly Chantrea is a rental specialist for studios and one-bedroom units in BKK."
   },
   {
     "id": 326,
@@ -257,7 +307,9 @@
       "phone": "087-995-221",
       "email": "sophal.chhun@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Daun Penh",
+    "description": "Sophal Chhun handles high-value commercial building sales and leasing in Daun Penh."
   },
   {
     "id": 327,
@@ -267,7 +319,9 @@
       "phone": "093-340-112",
       "email": "kanha.srey@cityhomes.com"
     },
-    "languages": ["km", "zh"]
+    "languages": ["km", "zh"],
+    "district": "Tuol Kouk",
+    "description": "Kanha Srey specializes in off-plan condo sales for local and Chinese buyers."
   },
   {
     "id": 328,
@@ -277,7 +331,9 @@
       "phone": "012-770-899",
       "email": "phalla.chey@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Chamkar Mon",
+    "description": "Phalla Chey focuses on corporate housing and executive rentals in Chamkar Mon."
   },
   {
     "id": 329,
@@ -287,7 +343,9 @@
       "phone": "099-882-551",
       "email": "chanraksmey.pov@cityhomes.com"
     },
-    "languages": ["km"]
+    "languages": ["km"],
+    "district": "Sen Sok",
+    "description": "Chanraksmey Pov helps local businesses find affordable commercial spaces in Sen Sok."
   },
   {
     "id": 330,
@@ -297,6 +355,8 @@
       "phone": "088-123-450",
       "email": "rith.soklina@cityhomes.com"
     },
-    "languages": ["km", "en"]
+    "languages": ["km", "en"],
+    "district": "Mean Chey",
+    "description": "Rith Soklina specializes in modern residential communities in Mean Chey."
   }
 ]

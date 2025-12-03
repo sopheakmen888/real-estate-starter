@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: auto;
+  padding-inline: 16px;
+}
+
+.section-listing {
+  margin: 80px auto 50px;
+}
+
+.filter-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.t-btn {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all 0.3s ease;
+}
+
+/* Primary button */
+.btn-sell {
+  background-color: var(--acent);
+  color: white;
+}
+
+/* Secondary button */
+.btn-rent,
+.btn-extra {
+  background-color: #F0E8E8;
+  color: black;
+}
+
+/* Hover style */
+.btn-rent:hover,
+.btn-extra:hover {
+  background-color: var(--acent);
+  color: white;
+}
+
+/* Make extra button wider */
+.btn-extra {
+  width: 110px;
+}
+
+#saleColsCard {
+    margin-top: 38px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .filter h3 {
+    font-size: 1rem;
+  }
+}

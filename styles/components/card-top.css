@@ -1,12 +1,43 @@
+/* top-card */
 .card-top {
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
   height: 300px;
-  cursor: pointer;
-  color: #fff;
+  background-color: var(--card);
   text-decoration: none;
   transition: transform 0.3s ease;
+}
+
+.card-top-content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-top-content span {
+  color: var(--text-highlight);
+  font-size: 26px;
+  margin-bottom: 10px;
+  padding: 18px;
+  border-radius: 50%;
+  background-color: var(--acent-hover);
+}
+
+.card-top-content h1 {
+  color: var(--text);
+  font-size: 1.3rem;
+}
+
+.card-top-content p {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 /* Make image fill the whole card */
@@ -22,10 +53,16 @@
 
 /* Text overlay at bottom */
 .card-top__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
+  height: 100%;
   padding: 1rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
 }

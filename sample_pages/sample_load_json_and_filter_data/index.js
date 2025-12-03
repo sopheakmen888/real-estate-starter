@@ -1,5 +1,5 @@
 const propertyList = document.getElementById("propertyList");
-const purpose = "sale";
+const purpose = "rent";
 
 fetch("/public/data/properties.json")
   .then((response) => response.json())

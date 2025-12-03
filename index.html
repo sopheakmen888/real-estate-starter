@@ -3,100 +3,141 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>KH Realty — Find Homes in Cambodia</title>
+    <title>Home | Apple Real Estate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Affordable rentals and homes in Cambodia." />
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/components/nav.css">
     <link rel="stylesheet" href="/styles/scroller.css">
+    <link rel="stylesheet" href="/styles/components/feature-card.css">
     <link rel="stylesheet" href="/styles/components/card.css">
+    <link rel="stylesheet" href="/styles/components/card-category.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="styles/components/agent-card.css">
+    <link rel="stylesheet" href="/styles/components/card-items.css">
+    <link rel="stylesheet" href="styles/components/subscription.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
     <link rel="stylesheet" href="/styles/components/general.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" />
+
 
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
 </head>
 
-<body> HI
-
+<body>
     <!-- ===== NAV ===== -->
-    <nav class="nav" aria-label="Primary">
-        <div class="nav__bar container">
-            <a class="nav__brand" href="/">KH Realty</a>
-            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
-        </div>
-        <ul class="nav__list container" id="navList">
-            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar-content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#heroSection"><img src="public/assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li><button class="close-btn" onclick="hideSidebar()">
+                          <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                    
+                    <li><a class="active" href="#heroSection">Home</a></li>
+                    <li><a href="/pages/rent/index.html">Rent</a></li>
+                    <li><a href="/pages/buy/index.html">Buy</a></li>
+                    <li><a href="/pages/agents/index.html">Agents</a></li>
+                    <li><a href="/pages/about/index.html">About</a></li>
+                    <li><a href="/pages/contact/index.html">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a class="hideOnMobile active" href="#heroSection">Home</a></li>
+                    <li><a class="hideOnMobile" href="/pages/rent/index.html">Rent</a></li>
+                    <li><a class="hideOnMobile" href="/pages/buy/index.html">Buy</a></li>
+                    <li><a class="hideOnMobile" href="/pages/agents/index.html">Agents</a></li>
+                    <li><a class="hideOnMobile" href="/pages/about/index.html">About</a></li>
+                    <li><a class="hideOnMobile" href="/pages/contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+
+             <div class="nav-actions">
+                <div class="nav-btn" onclick="toggleTheme(); return false;">
+                    <a href="#"><i class="fas fa-moon"></i> Dark</a>
+                </div>
+
+                <a class="menu-btn" onclick="showSidemenu()" href="javascript:void(0)">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <script src=""></script>
+            </div>
+
+            <script>
+                // show sidebar
+                function showSidemenu() {
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'flex';
+                }
+
+                // hide sidebar
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar'); // use same variable
+                    sidebar.style.display = 'none'; // hide sidebar
+                }
+
+            </script>
+        </nav>
+    </header>
 
     <!-- ===== HERO: Search & Filter ===== -->
-    <header class="hero container">
-        <div class="hero__card">
-            <h1 class="hero__title">Find your next home</h1>
-            <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
-            <form class="hero__form" action="#" role="search">
-                <select aria-label="Purpose" id="selectPurpose">
-                    <option>Rent</option>
-                    <option>Buy</option>
-                </select>
-                <select aria-label="Type" id="selectType">
-                    <option>Room</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-                <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
-                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
-                <button class="hero__btn" type="submit">Search</button>
-            </form>
+    <header class="hero" id="heroSection">
+        <img src="/public/assets/images/hero-img.jpeg" alt="">
+
+        <div class="container">
+            <div class="hero__card">
+                <h1 class="hero__title">Find your Home, Appartment &<br> Room
+                in Phnom Penh</h1>
+                <p class="hero__subtitle">Helping you find the perfect property in Phnom Penh,<br>
+                whether it’s for living, investing, or renting.</p>
+                <form class="hero__form" action="#" role="search">
+                    <select aria-label="Purpose" id="selectPurpose">
+                        <option>Rent</option>
+                        <option>Buy</option>
+                    </select>
+                    <select aria-label="Type" id="selectType">
+                        <option>Room</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                    </select>
+                    <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
+                    <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
+                    <button class="hero__btn" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+
+        <script src="scripts/index.js"></script>
     </header>
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
-    <section class="section container">
+    <section class="section container" id="featureSection">
         <div class="section__head">
             <h2 class="section__title">Featured Properties</h2>
+            <p>Each listing provides unique features, quality, and <br>
+                 location for an exclusive living experience.</p>
         </div>
 
         <div class="scroller" aria-label="Featured properties">
             <div class="scroller__track">
                 <!-- Group A -->
                 <div class="scroller__group">
-                    <a class="card" href="/property/1">
-                        <img class="card__media" src="https://picsum.photos/640/400?1"
-                            alt="Modern apartment near AEON Mall" />
-                        <div class="card__body">
-                            <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
-                            <div class="card__meta">$350 / month • 2BR</div>
-                            <span class="badge">Available</span>
-                        </div>
-                    </a>
-                    <a class="card" href="/property/2">
-                        <img class="card__media" src="https://picsum.photos/640/400?2"
-                            alt="Cozy student room near ITC" />
-                        <div class="card__body">
-                            <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
-                            <div class="card__meta">$80 / month • 1BR</div>
-                            <span class="badge">Available</span>
-                        </div>
-                    </a>
-                    <a class="card" href="/property/3">
-                        <img class="card__media" src="https://picsum.photos/640/400?3" alt="Family house in Sen Sok" />
-                        <div class="card__body">
-                            <h3 class="card__title">Family House — Sen Sok</h3>
-                            <div class="card__meta">$78,000 • 3BR</div>
-                            <span class="badge">For Sale</span>
-                        </div>
-                    </a>
+                    <!-- dynamic-card -->
+                    <div class="feature-card" id="featureCard">
+
+                    </div>
+
+                    <script src="scripts/card-feature.js"></script>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -105,28 +146,73 @@
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Property Categories</h2>
-            <a class="section__link" href="#">Show More</a>
         </div>
+        
         <div class="card-grid-groups" aria-label="Property categories">
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
+            <a class="card-category" href="">
+                <img class="card-top__media" src="public/assets/images/condo.jpeg" alt="Condo" />
                 <div class="card-top__body">
-                    <h3 class="card-top__title">Rooms</h3>
-                    <div class="card-top__meta">Budget stays</div>
+                    <h3 class="card-top__title">Condo</h3>
+                    <div class="card-top__meta">Fancy lifestyle.</div>
                 </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?5" alt="Apartments" />
+            </a>
+
+            <a class="card-category" href="">
+                <img class="card-top__media" src="public/assets/images/apartment.jpeg" alt="Apartments" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Apartments</h3>
                     <div class="card-top__meta">City living</div>
                 </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?6" alt="Houses" />
+            </a>
+
+            <a class="card-category" href="">
+                <img class="card-top__media" src="public/assets/images/house.png" alt="Houses" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Houses</h3>
                     <div class="card-top__meta">Family homes</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== Our uniqueness ===== -->
+    <section class="section container">
+        <div class="section__head">
+            <h2 class="section__title">Why you should <br>
+            choose us</h2>
+            <!-- <a class="section__link" href="#">Show More</a> -->
+        </div>
+
+        <div class="card-grid-groups" aria-label="Property categories">
+            <article class="card-top">
+                <div class="card-top-content">
+                    <span class="material-symbols-outlined">currency_exchange</span>
+                    <h1>Affordable Price</h1>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly.</p>
+                </div>
+            </article>
+
+            <article class="card-top">
+                <div class="card-top-content">
+                    <span class="material-symbols-outlined">shield_locked</span>
+                    <h1>Safety</h1>
+                    <p>Safety is a top priority, ensuring reliable performance and peace of mind. The design emphasizes secure use, protecting you.</p>
+                </div>
+            </article>
+
+            <article class="card-top">
+                <div class="card-top-content">
+                    <span class="material-symbols-outlined">done_all</span>
+                    <h1>Quality Properties</h1>
+                    <p>Offer well-built, modern place with care and attention to detail. Each property is designed for comfort, durability.</p>
+                </div>
+            </article>
+
+            <article class="card-top">
+                <div class="card-top-content">
+                    <span class="material-symbols-outlined">check_circle_unread</span>
+                    <h1>Expert Agents</h1>
+                    <p>Expert agents bring knowledge and experience, ensuring tasks are handled with precision and confidence.</p>
                 </div>
             </article>
         </div>
@@ -136,149 +222,135 @@
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Latest Properties</h2>
-            <a class="section__link" href="#">Show More</a>
         </div>
-        <div class="card-grid-groups" aria-label="Latest properties">
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?7" alt="Studio near BKK1" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Studio — BKK1</h3>
-                    <div class="card-top__meta">$250 / month</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?8" alt="Condo in Chroy Changvar" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Condo — Chroy Changvar</h3>
-                    <div class="card-top__meta">$560 / month</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?9" alt="Townhouse in Russey Keo" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Townhouse — Russey Keo</h3>
-                    <div class="card-top__meta">$120,000</div>
-                </div>
-            </article>
+
+        <!-- dynamic-card -->
+        <div class="card-grid-groups" id="itemsCard" aria-label="Latest properties">
+
         </div>
+
+        <div class="section__head">
+            <a class="section__link" href="pages/listing/index.html">Show More</a>
+        </div>
+        <script src="scripts/card-items.js"></script>
     </section>
 
     <!-- ===== Meet Our Agents (Top 3) ===== -->
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Meet Our Agents</h2>
-            <a class="section__link" href="#">Show More</a>
+            <p>This option comes at a very affordable price, making it accessible without compromising <br>
+             quality. It’s a budget‑friendly choice that delivers great value for the cost.</p>
         </div>
-        <div class="section__agents">
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=12" alt="Agent Dara" />
-                <div>
-                    <div><strong>Dara</strong> • Phnom Penh</div>
-                    <div class="card__meta">Apartments & rooms</div>
-                </div>
-            </div>
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=32" alt="Agent Sreyneang" />
-                <div>
-                    <div><strong>Sreyneang</strong> • Siem Reap</div>
-                    <div class="card__meta">Houses & land</div>
-                </div>
-            </div>
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=22" alt="Agent Vuthy" />
-                <div>
-                    <div><strong>Vuthy</strong> • Battambang</div>
-                    <div class="card__meta">Budget rentals</div>
-                </div>
-            </div>
+        
+        <!-- dynamic-card -->
+        <div class="section__agents" id="agentCard">
         </div>
-    </section>
+            
+        <script src="scripts/agent-card.js"></script>
+        </div> 
 
-    <!-- ===== Why Us? + Inquiry Form ===== -->
-    <section class="section container">
-        <div class="container why">
-            <h2 class="section__title" style="margin:0 0 8px">Why Choose KH Realty?</h2>
-            <ul class="why__list">
-                <li>Affordable options for students and workers</li>
-                <li>Bilingual support (Khmer & English)</li>
-                <li>Verified agents across key districts</li>
-            </ul>
-
-            <h2 class="section__title" style="margin:0 0 8px">Inquiry Form</h2>
-            <form class="inquiry form" action="#">
-                <div class="form__group">
-                    <label for="inq-name">Your name</label>
-                    <input class="input" id="inq-name" type="text" placeholder="e.g., Sokha" required>
-                </div>
-                <div class="form__group">
-                    <label for="inq-email">Email</label>
-                    <input class="input" id="inq-email" type="email" placeholder="you@example.com" required>
-                </div>
-                <div class="form__group">
-                    <label for="inq-msg">Message</label>
-                    <textarea class="input" id="inq-msg" rows="3" placeholder="What are you looking for?"></textarea>
-                </div>
-                <button class="btn" type="submit">Send Inquiry</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- ===== Testimonials (Horizontal) ===== -->
-    <section class="section container">
         <div class="section__head">
-            <h2 class="section__title">Testimonials</h2>
-        </div>
-        <div class="scroller">
-            <div class="scroller__track">
-                <div class="scroller__group" id="testimonials" aria-label="Testimonials">
-                    <blockquote class="quote card">
-                        <p>“Found a clean room near campus in 2 days. Love the Khmer support.”</p>
-                        <div class="quote__name">— Sopheak, Student</div>
-                    </blockquote>
-                    <blockquote class="quote card">
-                        <p>“Great agents and fair prices. Easy on mobile.”</p>
-                        <div class="quote__name">— Rina, Receptionist</div>
-                    </blockquote>
-                    <blockquote class="quote card">
-                        <p>“Transparent listings and quick replies.”</p>
-                        <div class="quote__name">— Vuthy, Technician</div>
-                    </blockquote>
-                </div>
-            </div>
+            <a class="section__link" href="/pages/agents/index.html">Show More</a>
         </div>
     </section>
 
-    <!-- ===== Social + Subscribe ===== -->
+        <!-- ===== Inquiry Form ===== -->
     <section class="section container">
         <div class="container subscribe">
-            <h2 class="section__title" style="margin:0">Stay in the loop</h2>
+            <h2 class="section__title" style="margin:0">Let’s us help</h2>
             <p class="section__hint">Latest affordable listings, once a week</p>
+
             <div class="subscribe__row">
-                <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
-                <button class="btn" type="button">Subscribe</button>
+                <label for="">Type</label>
+
+                <select class="subscribe__select" aria-label="Type" id="selectType">
+                    <option value="">select</option>
+                    <option>Room</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                </select>
             </div>
-            <div class="section__actions" style="margin-top:10px">
-                <button class="pill" aria-label="Facebook">Facebook</button>
-                <button class="pill" aria-label="Telegram">Telegram</button>
-                <button class="pill" aria-label="YouTube">YouTube</button>
+
+            <div class="subscribe__row">
+                <label for="">Full name</label>
+                <input class="input" type="text" placeholder="Enter your fullname" aria-label="Name">
+            </div>
+
+            <div class="subscribe__row">
+                <label for="">Email</label>
+                <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
+            </div>
+
+            <div class="subscribe__row">
+                <label for="">Phone number</label>
+                <input class="input" type="tel" placeholder="Enter your phnne number" aria-label="Phone Number">
+            </div>
+
+            <div class="subscribe__row">
+                <label for="">Location</label>
+
+                <select class="subscribe__select" aria-label="Type" id="selectType">
+                    <option value="">select</option>
+                    <option>Phnom Pen</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                </select>
+            </div>
+
+            <div class="subscribe__row">
+                 <input class="sub-btn" type="submit" value="Subscribe">
+            </div>  
+        </div>
+    </section>
+
+    <!-- ===== Subscription Card ===== -->
+    <section class="section container">
+        <div class="subscription-card">
+            <div class="sub-card-bg">
+                <img src="/public/assets/images/sub-img.jpeg" alt="">
+            </div>
+
+            <div class="sub-card-content">
+                <h1>Stay in touch with us!</h1>
+                <p>Get the latest news, updates, and exclusive offers straight to your inbox.</p>
+
+                <div class="subscription-inputs">
+                    <input type="email" placeholder="Enter your email" class="fill-in">
+                    <button type="submit" class="submit">Subscribe</button>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="footer__grid container">
-            <div>
-                <strong>KH Realty</strong><br />
-                <span class="footer__small">Helping Cambodians find homes easily.</span>
-            </div>
-            <nav aria-label="Footer">
-                <div class="footer__small"><a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> • <a
-                        href="#">Contact</a></div>
-            </nav>
+        <div class="img-footer">
+            <a href=""><img src="/public/assets/images/logo.png" alt=""></a>
         </div>
-        <div class="container" style="margin-top:10px">
-            <small class="footer__small">© 2025 KH Realty</small>
+
+        <div class="footer-infor">
+            <h1>Excellence <span>Defined</span>. Lifestyle <span>Redefined</span>.</h1>
+            <p>We are committed to delivering premium real estate solutions that blend modern living with long-term value. With a focus on quality, innovation, and customer satisfaction, we create spaces that inspire and elevate everyday life. Your future begins with a home built on excellence.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p>CONTACT US:</p>
+             <div class="contact-cols">
+                <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
+                <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+             </div>
+        </div>
+
+        <nav aria-label="footer-links">
+                <div class="footer__small">
+                    <a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> • <a href="#">Contact</a>
+                </div>
+        </nav>
+
+        <div class="copyright">
+            <small>© 2025 Apple KH Real Estate. All Rights Reserved.</small>
         </div>
     </footer>
 
@@ -303,7 +375,7 @@
     </script>
 
     <script src="/scripts/scroller.js"></script>
-    <script src="/scripts/index.js"></script>
+    <!-- <script src="/scripts/index.js"></script> -->
 </body>
 
 </html>

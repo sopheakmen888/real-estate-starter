@@ -1,0 +1,154 @@
+.footer {
+  width: 100%;
+  background: var(--nav-foot);
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-footer {
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-infor {
+  max-width: 700px;
+}
+
+.footer-infor h1 {
+  font-size: 24px;
+  color: var(--text);
+  margin-top: 16px;
+}
+
+.footer-infor span {
+  color: var(--text-secondary);
+}
+
+.footer-infor p {
+  font-size: 16px;
+  color: var(--text);
+  margin-top: 8px;
+}
+
+.footer-contact {
+  font-size: var(--text);
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.contact-cols {
+  display: flex;
+  color: var(--muted);
+  gap: 16px;
+}
+
+.contact-cols span{
+  font-size: 16px;
+}
+
+.contact-cols i {
+  font-size: 12px;
+}
+
+.footer__small {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer__small a{
+  font-size: 17px;
+  transition: all .2s ease;
+  pointer-events: auto;
+}
+
+.footer__small a:hover {
+  color: var(--acent-hover);
+  transform: translateY(-6px);
+}
+
+.copyright {
+  width: 100%;
+  margin-top: 24px;
+  padding: 4px 0px;
+  background-color: var(--muted);
+}
+
+.copyright small {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .img-footer {
+    width: 220px;
+    height: auto;
+    margin-top: 18px;
+  }
+
+  .footer-infor {
+    max-width: 90%;
+  }
+
+  .footer-infor h1 {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  .footer-infor p {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .footer-contact {
+    margin-top: 24px;
+  }
+
+  .contact-cols {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .contact-cols span {
+    font-size: 14px;
+  }
+
+  .contact-cols i {
+    font-size: 10px;
+  }
+
+  .footer__small {
+    gap: 10px;
+  }
+
+  .footer__small a {
+    font-size: 15px;
+    transform: none;
+  }
+
+  .footer__small a:hover {
+    transform: translateY(-4px);
+  }
+
+  .copyright small {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+.successful{
+    max-width: var(--maxw);
+    margin: auto;
+    margin-top: 95px;
+    text-align: center;
+    /* padding: 6px; */
+  }
+  .t-sucess{
+    padding: 10px;
+  }
+
+.successful i {
+    font-size: 90px;
+}
+  button{
+    width: 240px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    line-height: 10px;
+  }
+ button:hover{
+    background-color: var(--acent);
+    background-color: #FAB21E;
+}
